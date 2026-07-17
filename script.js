@@ -262,7 +262,7 @@ const SOURCES = [
       { t: "VC perception", d: "Some (not all) institutional investors read an equity crowdfund as 'couldn't raise professionally.' A clean SPV structure and strong metrics neutralize this." }
     ],
     docs: [
-      { n: "SEC Reg CF overview", u: "https://www.sec.gov/education/smallbusiness/exemptofferings/regcrowdfunding", d: "The official rules: caps, disclosure, and investor limits." },
+      { n: "SEC Reg CF overview", u: "https://www.sec.gov/resources-small-businesses/exempt-offerings/regulation-crowdfunding", d: "The official rules: caps, disclosure, and investor limits." },
       { n: "Crowd SAFE (Republic)", u: "https://republic.com", d: "The SAFE variant adapted for crowd investors." },
       { n: "Wefunder founder guide", u: "https://wefunder.com/faq", d: "Practical walkthrough of costs, timelines, and Form C mechanics." }
     ],

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apicus · Advisors &amp; Board Construction</title>
+  <meta name="description" content="How to use advisors without giving away the company, and how boards are actually constructed stage by stage: seat math, the independent director, control layers, and board hygiene.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css?v=5">
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9c0-4 3-6 7-6 0 4-3 6-7 6Z"/><path d="M12 13c0-3-2.5-5-5.5-5 0 3 2.5 5 5.5 5Z"/></svg>
+        </span>
+        <span>apicus<em>.org</em></span>
+      </a>
+      <nav class="nav-pages" aria-label="Pages">
+        <a class="page-link" href="index.html">Funding Guide</a>
+        <a class="page-link" href="scale.html">Scale-Ready</a>
+        <a class="page-link" href="documents.html">Documents</a>
+        <a class="page-link" href="board.html" aria-current="page">Advisors &amp; Board</a>
+      </nav>
+    </div>
+    <div class="nav-sections-row">
+      <nav class="nav-links" aria-label="Sections on this page">
+        <a href="#advisors">Advisors</a>
+        <a href="#boardroom">The Boardroom</a>
+        <a href="#construction">Construction</a>
+        <a href="#control">Control Math</a>
+        <a href="#hygiene">Hygiene</a>
+      </nav>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero hero-compact" id="hero">
+      <div class="hero-inner">
+        <p class="hero-kicker reveal">Apicus · chapter no. 04</p>
+        <h1 class="hero-title">
+          <span class="line"><span>Advisors, boards &amp;</span></span>
+          <span class="line"><span><em class="accent-grad">control</em> of the company.</span></span>
+          <span class="line hero-sub-line"><span>Equity buys seats. Seats decide everything.</span></span>
+        </h1>
+        <p class="hero-sub reveal">
+          Two groups of outsiders end up around your table: advisors, who have influence but no power,
+          and directors, who have <strong>legal power over the company, including over you</strong>.
+          Founders routinely overpay the first group and under-think the second. This chapter is the math
+          and the norms for both.
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#construction">Board construction by stage
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#control">Check your board balance</a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-label">seats on the classic Series A board</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="24" data-suffix=" mo">0</span>
+            <span class="stat-label">standard advisor vesting period</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="1" data-suffix="%">0</span>
+            <span class="stat-label">sane ceiling for a single advisor grant</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">kinds of seats: founder, investor, independent</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ADVISORS ================= -->
+    <section class="section" id="advisors">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 01 · Influence without power</p>
+        <h2>Advisors: cheap if structured, expensive if not</h2>
+        <p class="section-sub">A good advisor compresses years of learning into a phone call: intros that get answered, pattern-matching from having seen your movie before, and credibility borrowed until you've earned your own. None of that requires giving away meaningful equity, and none of it belongs on a handshake.</p>
+      </div>
+
+      <div class="matrix-panel reveal">
+        <h3 class="chart-title">What advisor equity is normal (the FAST framework)</h3>
+        <div class="matrix-scroll">
+          <table class="matrix">
+            <thead>
+              <tr><th scope="col">Company stage</th><th scope="col">Standard advisor</th><th scope="col">Strategic advisor</th><th scope="col">Expert advisor</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Idea stage</td><td>0.25%</td><td>0.50%</td><td>1.00%</td></tr>
+              <tr><td>Startup stage</td><td>0.20%</td><td>0.40%</td><td>0.80%</td></tr>
+              <tr><td>Growth stage</td><td>0.15%</td><td>0.30%</td><td>0.60%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="chart-foot">Levels from the Founder Institute's FAST agreement, the standard template at <a href="https://fi.co/fast" target="_blank" rel="noopener">fi.co/fast</a>. Grants vest monthly over ~2 years with a short cliff, as options, with a defined role. An advisor asking for 2%+, cash retainers, or board representation is asking for something other than an advisory role.</p>
+      </div>
+
+      <div class="spotlight-grid">
+        <article class="spot-card reveal">
+          <h3>Structure it like this</h3>
+          <ul class="tick-list">
+            <li><strong>Named deliverables.</strong> "Two intros a quarter and a monthly call" beats "general strategic guidance" every time.</li>
+            <li><strong>Vesting with a cliff.</strong> If the relationship fizzles in month two, the cliff means no equity left the building.</li>
+            <li><strong>A sunset.</strong> Review every six months; end it politely when the usefulness ends. Most advisor value is front-loaded.</li>
+            <li><strong>Options, not shares.</strong> Advisor grants come from the option pool with a standard exercise window.</li>
+          </ul>
+        </article>
+        <article class="spot-card reveal">
+          <h3>Walk away from</h3>
+          <ul class="cross-list">
+            <li><strong>The advisor collector's pitch.</strong> "Put me on the deck and doors will open." A logo wall of advisors signals neediness, not strength.</li>
+            <li><strong>Equity for the intro.</strong> A single introduction is worth a thank-you note, not 0.5% of your company.</li>
+            <li><strong>Pay-to-advise.</strong> Anyone charging cash to be your advisor is a consultant; price them as one.</li>
+            <li><strong>Investor-advisors without checks.</strong> "I'll invest later, advise me in now" almost never converts. Equity follows money or work, not promises.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= BOARDROOM ================= -->
+    <section class="section" id="boardroom">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 02 · Power, defined</p>
+        <h2>What a board of directors actually is</h2>
+        <p class="section-sub">The board is not a mentorship circle. It is the legal governing body of the corporation, elected by shareholders, owing fiduciary duties of care and loyalty to all of them. Advisors advise you; the board employs you.</p>
+      </div>
+
+      <div class="spotlight-grid">
+        <article class="spot-card reveal">
+          <h3>Powers the board holds</h3>
+          <ul class="tick-list">
+            <li><strong>Hires and fires the CEO.</strong> Including founder-CEOs. This is the power that makes every other one real.</li>
+            <li><strong>Approves financings,</strong> option grants, annual budgets, executive compensation, and any sale of the company.</li>
+            <li><strong>Issues stock.</strong> Every share and option that exists was authorized by a board action.</li>
+            <li><strong>Sets its own agenda.</strong> A functioning board holds the company to a plan the CEO proposed and the board approved.</li>
+          </ul>
+        </article>
+        <article class="spot-card reveal">
+          <h3>What founders get wrong about it</h3>
+          <ul class="cross-list">
+            <li><strong>Treating seats as gratitude.</strong> A board seat is not a thank-you gift for a check. It outlives the money and survives every future round.</li>
+            <li><strong>Confusing the two control layers.</strong> Board votes and shareholder protective provisions are separate veto systems. You can control one and be blocked by the other.</li>
+            <li><strong>Assuming goodwill scales.</strong> Your seed investor's fund gets marked to zero in a downturn and the friendly partner starts voting their fiduciary duty, not your friendship.</li>
+            <li><strong>Skipping the paper.</strong> No D&amp;O insurance and no indemnification agreements means qualified independents will decline your board, correctly.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= CONSTRUCTION ================= -->
+    <section class="section" id="construction">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 03 · Seat by seat</p>
+        <h2>Board construction, stage by stage</h2>
+        <p class="section-sub">Boards grow one financing at a time, and seats granted early are nearly impossible to claw back. The common patterns:</p>
+      </div>
+
+      <div class="legend-strip reveal" aria-hidden="true">
+        <span class="chip"><span class="seat seat-f" style="display:inline-grid; width:18px; height:18px; font-size:0.5rem">F</span>&nbsp; Founder / common</span>
+        <span class="chip"><span class="seat seat-v" style="display:inline-grid; width:18px; height:18px; font-size:0.5rem">V</span>&nbsp; Investor / preferred</span>
+        <span class="chip"><span class="seat seat-i" style="display:inline-grid; width:18px; height:18px; font-size:0.5rem">I</span>&nbsp; Independent</span>
+        <span class="chip"><span class="seat seat-o" style="display:inline-grid; width:18px; height:18px; font-size:0.5rem">O</span>&nbsp; Observer (no vote)</span>
+      </div>
+
+      <div class="board-evo">
+        <div class="board-stage reveal">
+          <div class="board-stage-label"><strong>Formation</strong><span>1&ndash;2 seats</span></div>
+          <div class="seats"><span class="seat seat-f">F</span><span class="seat seat-f">F</span></div>
+          <p class="board-note">Founders only. Keep it formal anyway: real board consents, real minutes. The habits matter before the stakes do.</p>
+        </div>
+        <div class="board-stage reveal">
+          <div class="board-stage-label"><strong>Seed</strong><span>3 seats, often fewer</span></div>
+          <div class="seats"><span class="seat seat-f">F</span><span class="seat seat-f">F</span><span class="seat seat-v">V</span><span class="seat seat-o">O</span></div>
+          <p class="board-note">Many seed rounds take no seat at all; guard that where you can. If a lead insists, one investor seat on a three-seat board is the norm. Observers (common for CVCs) attend without voting.</p>
+        </div>
+        <div class="board-stage reveal">
+          <div class="board-stage-label"><strong>Series A</strong><span>the classic 5</span></div>
+          <div class="seats"><span class="seat seat-f">F</span><span class="seat seat-f">F</span><span class="seat seat-v">V</span><span class="seat seat-v">V</span><span class="seat seat-i">I</span></div>
+          <p class="board-note">Two founders, two investors, one independent: the 2-2-1. A leaner 2-1 (two founders, one lead) is common and founder-friendlier; take it when offered.</p>
+        </div>
+        <div class="board-stage reveal">
+          <div class="board-stage-label"><strong>Growth</strong><span>7 seats</span></div>
+          <div class="seats"><span class="seat seat-f">F</span><span class="seat seat-f">F</span><span class="seat seat-v">V</span><span class="seat seat-v">V</span><span class="seat seat-v">V</span><span class="seat seat-i">I</span><span class="seat seat-i">I</span></div>
+          <p class="board-note">Later rounds add investor seats; healthy companies balance them with independents who bring operating experience, not just capital.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTROL ================= -->
+    <section class="section" id="control">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 04 · The math that matters</p>
+        <h2>Who really controls the board</h2>
+        <p class="section-sub">Count the seats by allegiance, not by name. When founder seats and investor seats split evenly, every contested vote, including whether you keep your job, is decided by the independent director. That's why "the independent" is the most negotiated seat in venture: insist it be chosen jointly, and never let it default to someone from an investor's roster.</p>
+      </div>
+
+      <div class="check-panel reveal">
+        <h3 class="chart-title">Balance check: count your seats</h3>
+        <div class="balance-inputs">
+          <label>Founder seats<input type="number" id="seatF" min="0" max="9" value="2"></label>
+          <label>Investor seats<input type="number" id="seatV" min="0" max="9" value="2"></label>
+          <label>Independent seats<input type="number" id="seatI" min="0" max="9" value="1"></label>
+        </div>
+        <p class="balance-verdict" id="balanceVerdict"></p>
+      </div>
+
+      <div class="doc-extras reveal" style="margin-top:22px">
+        <div class="doc-extra">
+          <h4>The second control layer</h4>
+          <p>Protective provisions in the charter give preferred shareholders veto rights over big decisions (new financings, a sale, new senior stock) regardless of board math. Controlling the board while forgetting the charter is winning half the game. Details live in <a href="documents.html#priced">the priced-round stack ↗</a>.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Observers: the pressure valve</h4>
+          <p>An observer seat grants attendance and information without a vote. It's the standard compromise for strategic investors and smaller funds, and usually the right counter when a seed investor asks for a full seat.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Voting agreements decide elections</h4>
+          <p>Who elects which seat is fixed in the voting agreement at each round: common elects founder seats, preferred elects investor seats, and everyone together (usually) elects independents. Read it before you sign it; it is the constitution of your board.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HYGIENE ================= -->
+    <section class="section" id="hygiene">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 05 · Running it well</p>
+        <h2>Board hygiene</h2>
+      </div>
+      <ol class="rules-list">
+        <li class="reveal"><span class="rule-num">01</span><div><h3>Keep it odd and keep it small.</h3><p>Even-numbered boards deadlock, and deadlocks favor whoever benefits from nothing happening. Five beats seven; three beats five until the company is real.</p></div></li>
+        <li class="reveal"><span class="rule-num">02</span><div><h3>Reference-check directors harder than executives.</h3><p>Call founders from their portfolio, including the failed companies. You can fire an executive; removing a director is somewhere between painful and impossible.</p></div></li>
+        <li class="reveal"><span class="rule-num">03</span><div><h3>No surprises in the boardroom.</h3><p>Bad news travels before the meeting, one call at a time. The meeting is for decisions, not reveals; a surprised board is a board that stops trusting you.</p></div></li>
+        <li class="reveal"><span class="rule-num">04</span><div><h3>Paper the protections before you need them.</h3><p>D&amp;O insurance and indemnification agreements for every director, from the first outside seat. Serious independents will ask; the good ones walk if the answer is no.</p></div></li>
+        <li class="reveal"><span class="rule-num">05</span><div><h3>Run real meetings from the start.</h3><p>An agenda, a deck sent 48 hours ahead, minutes, and consents for everything that needs one. Six to eight meetings a year early on. Sloppy governance surfaces in diligence at the worst possible price.</p></div></li>
+      </ol>
+
+      <div class="section-head reveal" style="margin-top:60px">
+        <p class="eyebrow">Further reading</p>
+      </div>
+      <div class="doc-extras reveal">
+        <div class="doc-extra">
+          <h4>FAST agreement</h4>
+          <p>The standard advisor template with the equity matrix above, free at <a href="https://fi.co/fast" target="_blank" rel="noopener">fi.co/fast ↗</a>.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>NVCA voting agreement</h4>
+          <p>The model document where board composition is actually set, within the model legal documents at <a href="https://nvca.org/model-legal-documents/" target="_blank" rel="noopener">nvca.org ↗</a>.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Startup Boards (Feld &amp; Ramsinghani)</h4>
+          <p>The standard book-length treatment of venture-backed board mechanics, meeting cadence, and director management.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>YC Startup Library</h4>
+          <p>Free essays on board management and investor relations at <a href="https://www.ycombinator.com/library" target="_blank" rel="noopener">ycombinator.com/library ↗</a>.</p>
+        </div>
+      </div>
+
+      <a class="chapter-link reveal" href="documents.html">
+        <div>
+          <span class="cl-kicker">Previous chapter · No. 03</span>
+          <h3>The document library</h3>
+          <p class="section-sub">The voting agreement, charter, and consents where everything on this page becomes legally real.</p>
+        </div>
+        <span class="cl-arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Apicus</strong> is an educational field guide, not legal or financial advice. Consult a startup attorney before signing any financing document.</p>
+    <p class="footer-fine">Named for Marcus Gavius Apicius, whose <em>De re coquinaria</em> is the oldest surviving cookbook. Consider this a cookbook of capital: recipes, ingredients, and how each one can burn.</p>
+    <p class="footer-fine">Built with HTML5, CSS &amp; vanilla JS.</p>
+  </footer>
+
+  <script src="site.js?v=5"></script>
+  <script src="board.js?v=5"></script>
+</body>
+</html>

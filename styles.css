@@ -749,6 +749,50 @@ body.modal-open { overflow: hidden; }
 }
 .check-group-label:first-child { margin-top: 0; }
 
+/* ---------- board seats ---------- */
+.board-evo { display: grid; gap: 14px; }
+.board-stage {
+  display: grid; grid-template-columns: 170px 1fr; gap: 8px 22px; align-items: center;
+  background: var(--card); border: 1.5px solid var(--ink); border-radius: var(--radius);
+  padding: 20px 24px;
+}
+.board-stage-label strong { display: block; font-size: 1.05rem; letter-spacing: -0.01em; }
+.board-stage-label span {
+  font-family: var(--mono); font-size: 0.64rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.07em; color: var(--ink-3);
+}
+.seats { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.seat {
+  width: 32px; height: 32px; border-radius: var(--radius);
+  display: grid; place-items: center;
+  font-family: var(--mono); font-size: 0.66rem; font-weight: 700;
+  border: 1.5px solid var(--ink);
+}
+.seat-f { background: var(--ink); color: var(--paper); }
+.seat-v { background: color-mix(in srgb, var(--plum) 14%, var(--card)); color: var(--plum); border-color: var(--plum); }
+.seat-i { background: color-mix(in srgb, var(--forest) 14%, var(--card)); color: var(--forest); border-color: var(--forest); }
+.seat-o { background: transparent; color: var(--ink-3); border: 1.5px dashed var(--ink-3); }
+.board-note { grid-column: 2; font-size: 0.86rem; color: var(--ink-2); }
+
+/* ---------- board balance checker ---------- */
+.balance-inputs { display: flex; gap: 22px; flex-wrap: wrap; margin-bottom: 18px; }
+.balance-inputs label {
+  display: grid; gap: 6px;
+  font-family: var(--mono); font-size: 0.64rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-3);
+}
+.balance-inputs input {
+  width: 84px; padding: 10px 12px;
+  font-family: var(--mono); font-size: 1.05rem; font-weight: 700; color: var(--ink);
+  background: var(--paper); border: 1.5px solid var(--ink); border-radius: var(--radius);
+}
+.balance-inputs input:focus-visible { outline: 2px solid var(--rust); outline-offset: 2px; }
+.balance-verdict {
+  border-top: 1px dashed var(--hairline); padding-top: 16px;
+  font-size: 1rem; color: var(--ink-2);
+}
+.balance-verdict strong { color: var(--ink); }
+
 /* ---------- chapter link ---------- */
 .chapter-link {
   display: flex; align-items: center; justify-content: space-between; gap: 18px;

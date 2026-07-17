@@ -45,7 +45,7 @@ const SOURCES = [
     ],
     docs: [
       { n: "Founder equity: post-incorporation checklist (YC)", u: "https://www.ycombinator.com/library", d: "Even with no investors, incorporate properly, file 83(b) elections, and vest founder stock. Future you will thank you." },
-      { n: "Stripe Atlas guides", u: "https://stripe.com/atlas/guides", d: "Practical guides on incorporation, founder stock, and early finances." }
+      { n: "Incorporate directly with the state", u: "https://corp.delaware.gov", d: "Delaware filings are forms you submit yourself. The 83(b) election is a letter to the IRS. None of this requires a paid service." }
     ],
     contacts: [
       { n: "Indie Hackers", u: "https://www.indiehackers.com", d: "Community of bootstrapped founders sharing revenue numbers and playbooks." },
@@ -84,8 +84,7 @@ const SOURCES = [
     ],
     contacts: [
       { n: "Your own network, with a memo", u: "", d: "Write a 1-page investment memo (what you're building, the terms, the risks) and send it to everyone at once. It keeps terms uniform and expectations honest." },
-      { n: "A startup attorney", u: "", d: "One or two hours of counsel on your F&F round is the cheapest legal insurance you'll ever buy." },
-      { n: "Cooley GO", u: "https://www.cooleygo.com", d: "Free legal document generators and plain-English explainers from a top startup law firm." }
+      { n: "A startup attorney", u: "", d: "One or two hours of counsel on your F&F round is the cheapest legal insurance you'll ever buy." }
     ]
   },
   {
@@ -338,7 +337,7 @@ const SOURCES = [
     docs: [
       { n: "SBA loan programs", u: "https://www.sba.gov/funding-programs/loans", d: "Official guide to 7(a), 504, and microloan programs with lender matching." },
       { n: "SBA Lender Match", u: "https://www.sba.gov/funding-programs/loans/lender-match", d: "Free tool connecting you to participating lenders." },
-      { n: "Term sheet basics for venture debt", u: "https://www.htgc.com", d: "Study interest rate, warrant coverage, covenants, and, most critically, the amortization start date." }
+      { n: "Read the venture debt term sheet yourself", u: "", d: "Study interest rate, warrant coverage, covenants, and, most critically, the amortization start date. Every lender's paper differs; the four numbers that matter don't." }
     ],
     contacts: [
       { n: "Community banks & CDFIs", u: "https://www.cdfifund.gov", d: "Community lenders often out-hustle big banks on small-business loans." },

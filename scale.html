@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apicus · Build for Scale Before You Scale</title>
+  <meta name="description" content="Investors fund machines that multiply money. How to build scale-readiness before you raise: unit economics, repeatable go-to-market, the use-of-funds story, and the metrics investors price.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9c0-4 3-6 7-6 0 4-3 6-7 6Z"/><path d="M12 13c0-3-2.5-5-5.5-5 0 3 2.5 5 5.5 5Z"/></svg>
+        </span>
+        <span>apicus<em>.org</em></span>
+      </a>
+      <nav class="nav-pages" aria-label="Pages">
+        <a class="page-link" href="index.html">Funding Guide</a>
+        <a class="page-link" href="scale.html" aria-current="page">Scale-Ready</a>
+      </nav>
+    </div>
+    <div class="nav-sections-row">
+      <nav class="nav-links" aria-label="Sections on this page">
+        <a href="#lens">The Investor Lens</a>
+        <a href="#pillars">Six Pillars</a>
+        <a href="#metrics">The Metrics</a>
+        <a href="#funds">Use of Funds</a>
+        <a href="#sequence">The Sequence</a>
+        <a href="#checklist">Checklist</a>
+      </nav>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero hero-compact" id="hero">
+      <div class="hero-inner">
+        <p class="hero-kicker reveal">Apicus · chapter no. 02</p>
+        <h1 class="hero-title">
+          <span class="line"><span>Build for <em class="accent-grad">scale</em></span></span>
+          <span class="line"><span>before you scale.</span></span>
+          <span class="line hero-sub-line"><span>Investors fund machines, not survival.</span></span>
+        </h1>
+        <p class="hero-sub reveal">
+          Nobody writes a check just to keep the lights on. Every serious investor is pricing one question:
+          <strong>if I put a dollar in, what comes out, and when?</strong> Scale-readiness is how you answer
+          that question before they ask it. It's the difference between pitching a plan and pitching a machine.
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#pillars">The six pillars
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#checklist">Take the readiness check</a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-num" data-count="74" data-suffix="%">0</span>
+            <span class="stat-label">of failed high-growth startups scaled prematurely</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="3" data-suffix="x">0</span>
+            <span class="stat-label">minimum LTV-to-CAC investors look for</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="12" data-suffix=" mo">0</span>
+            <span class="stat-label">healthy CAC payback ceiling</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="2" data-suffix="x">0</span>
+            <span class="stat-label">burn multiple ceiling for efficient growth</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INVESTOR LENS ================= -->
+    <section class="section" id="lens">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 01 · The investor lens</p>
+        <h2>Money in, milestones out</h2>
+        <p class="section-sub">An investor's diligence is a stress test of one loop: capital goes into your growth levers, evidence comes out, and that evidence prices the next round. If you can't draw this loop for your own company, you're asking them to fund a hope.</p>
+      </div>
+
+      <div class="spotlight-diagram reveal" aria-label="Capital flows into growth levers, evidence flows back to investors">
+        <div class="diagram-node diagram-startup">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="12" rx="2"/><path d="M12 11v4"/><path d="M10 13h4"/><path d="M6 7V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/></svg>
+          <strong>Their capital</strong>
+          <span>priced on your evidence</span>
+        </div>
+        <div class="diagram-flows">
+          <div class="flow flow-right"><span class="flow-label">Hiring plan · channel spend · infrastructure</span><span class="flow-track"><span class="flow-dot"></span><span class="flow-dot d2"></span><span class="flow-dot d3"></span></span></div>
+          <div class="flow flow-left"><span class="flow-track rev"><span class="flow-dot"></span><span class="flow-dot d2"></span><span class="flow-dot d3"></span></span><span class="flow-label">Metrics · milestones · the next round's price</span></div>
+        </div>
+        <div class="diagram-node diagram-corp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-5 4 3 5-7"/></svg>
+          <strong>Your growth machine</strong>
+          <span>levers with known outputs</span>
+        </div>
+      </div>
+
+      <div class="spotlight-grid">
+        <article class="spot-card reveal">
+          <h3>What "fundable" actually means</h3>
+          <ul class="tick-list">
+            <li><strong>Every dollar has a job.</strong> "18 months of runway" is not a plan. "Two AE hires that each produce $400k in pipeline by month 9" is a plan.</li>
+            <li><strong>The milestone prices the next round.</strong> Name the metric this raise unlocks, and what that metric is worth to the investors who come after.</li>
+            <li><strong>The machine survives diligence.</strong> When they rebuild your numbers from raw data, the story should get stronger, not weaker.</li>
+          </ul>
+        </article>
+        <article class="spot-card reveal">
+          <h3>What spooks investors</h3>
+          <ul class="cross-list">
+            <li><strong>Use-of-funds hand-waving.</strong> A pie chart with "Product 40%, Marketing 40%, Ops 20%" and no milestones attached reads as "we'll figure it out."</li>
+            <li><strong>Growth that doesn't repeat.</strong> Three big deals from the founder's network is traction; it is not yet a go-to-market engine.</li>
+            <li><strong>Metrics that appear only at fundraise time.</strong> If the dashboard was built last week for the deck, they can tell.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= SIX PILLARS ================= -->
+    <section class="section" id="pillars">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 02 · The foundation</p>
+        <h2>The six pillars of scale-readiness</h2>
+        <p class="section-sub">What has to be true before pouring capital on the fire makes it bigger instead of just louder. Each pillar is something an investor will probe; each red flag is something they've been burned by before.</p>
+      </div>
+
+      <div class="pillar-grid">
+        <article class="pillar reveal" style="--sc:var(--navy)">
+          <div class="pillar-top"><span class="src-icon" style="--sc:var(--navy)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/><path d="M12 3v2"/></svg></span><div><span class="pillar-num">Pillar 01</span><h3>Unit economics that improve with volume</h3></div></div>
+          <p class="pillar-desc">Scaling multiplies whatever economics you have. Profitable units get more profitable; broken units burn faster.</p>
+          <ul class="pillar-list">
+            <li>CAC, LTV, payback, and gross margin known cold, per segment</li>
+            <li>Margins hold or improve as volume grows</li>
+            <li>Cohorts retain: newer cohorts behave as well as older ones</li>
+          </ul>
+          <p class="pillar-flag"><strong>Red flag ·</strong> "We'll fix the margin with scale" without naming the mechanism that fixes it.</p>
+        </article>
+
+        <article class="pillar reveal" style="--sc:var(--rust)">
+          <div class="pillar-top"><span class="src-icon" style="--sc:var(--rust)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 8v6l-4 2v-8Z"/></svg></span><div><span class="pillar-num">Pillar 02</span><h3>A repeatable go-to-market engine</h3></div></div>
+          <p class="pillar-desc">Investors fund the second hundred customers, not the first ten. The engine matters more than the logo slide.</p>
+          <ul class="pillar-list">
+            <li>At least one channel produces customers predictably and profitably</li>
+            <li>The sales motion is documented; someone besides a founder has closed with it</li>
+            <li>Pipeline math works: leads in, conversion rates, cycle length, quota</li>
+          </ul>
+          <p class="pillar-flag"><strong>Red flag ·</strong> All revenue traces back to the founders' personal network or one heroic seller.</p>
+        </article>
+
+        <article class="pillar reveal" style="--sc:var(--forest)">
+          <div class="pillar-top"><span class="src-icon" style="--sc:var(--forest)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="6" rx="1.5"/><rect x="2" y="14" width="20" height="6" rx="1.5"/><path d="M6 7h.01"/><path d="M6 17h.01"/></svg></span><div><span class="pillar-num">Pillar 03</span><h3>Product and infrastructure headroom</h3></div></div>
+          <p class="pillar-desc">Not gold-plating. Just confidence that 10x the customers doesn't mean a rewrite, a security incident, or an on-call meltdown.</p>
+          <ul class="pillar-list">
+            <li>The product survives 10x load without heroics</li>
+            <li>Onboarding a customer takes no engineering time</li>
+            <li>Security and compliance match the buyers you're about to court</li>
+          </ul>
+          <p class="pillar-flag"><strong>Red flag ·</strong> Every new enterprise deal requires custom engineering that never gets productized.</p>
+        </article>
+
+        <article class="pillar reveal" style="--sc:var(--ochre)">
+          <div class="pillar-top"><span class="src-icon" style="--sc:var(--ochre)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3h16v18H4Z"/><path d="M8 7h8"/><path d="M8 11h8"/><path d="M8 15h5"/></svg></span><div><span class="pillar-num">Pillar 04</span><h3>Financial hygiene and a data room that's always ready</h3></div></div>
+          <p class="pillar-desc">Diligence is where deals die. Clean books signal an operator; messy books signal risk that gets priced against you.</p>
+          <ul class="pillar-list">
+            <li>Monthly close in under two weeks; accrual accounting by the time you raise seriously</li>
+            <li>One dashboard both founders and the board trust</li>
+            <li>Cap table current and papered; contracts findable in a day</li>
+          </ul>
+          <p class="pillar-flag"><strong>Red flag ·</strong> Revenue numbers that shift between the deck, the model, and the bank statements.</p>
+        </article>
+
+        <article class="pillar reveal" style="--sc:var(--plum)">
+          <div class="pillar-top"><span class="src-icon" style="--sc:var(--plum)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4"/><path d="M15 3h4a2 2 0 0 1 2 2v4"/><path d="M9 21H5a2 2 0 0 1-2-2v-4"/><path d="M15 21h4a2 2 0 0 0 2-2v-4"/><path d="M9 12h6"/></svg></span><div><span class="pillar-num">Pillar 05</span><h3>Playbooks instead of tribal knowledge</h3></div></div>
+          <p class="pillar-desc">Scale means new people doing old jobs. If the process lives in someone's head, hiring makes you slower before it makes you faster.</p>
+          <ul class="pillar-list">
+            <li>Critical processes written down: onboarding, support, deployment, escalation</li>
+            <li>A new hire reaches productivity in weeks, not quarters</li>
+            <li>Decisions have owners; meetings have artifacts</li>
+          </ul>
+          <p class="pillar-flag"><strong>Red flag ·</strong> "Ask Dana, she knows how that works" as the answer to more than one system.</p>
+        </article>
+
+        <article class="pillar reveal" style="--sc:var(--wine)">
+          <div class="pillar-top"><span class="src-icon" style="--sc:var(--wine)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17.5" cy="8.5" r="2.5"/><path d="M19 21v-1.5a3.5 3.5 0 0 0-2.5-3.36"/></svg></span><div><span class="pillar-num">Pillar 06</span><h3>An org that can absorb the money</h3></div></div>
+          <p class="pillar-desc">A raise is a hiring plan in disguise. Investors ask whether the team can turn headcount into output, because most teams can't.</p>
+          <ul class="pillar-list">
+            <li>A hiring pipeline and onboarding motion exist before the money lands</li>
+            <li>Founders have started delegating whole functions, not just tasks</li>
+            <li>No single person's exit stalls the company for a quarter</li>
+          </ul>
+          <p class="pillar-flag"><strong>Red flag ·</strong> A plan to triple headcount from a team that has never managed anyone.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= METRICS ================= -->
+    <section class="section" id="metrics">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 03 · Speak their language</p>
+        <h2>The metrics investors will ask for</h2>
+        <p class="section-sub">These come up in nearly every diligence conversation. Benchmarks are directional (they vary by industry, stage, and market mood), but knowing yours cold is non-negotiable.</p>
+      </div>
+
+      <div class="matrix-panel reveal">
+        <div class="matrix-scroll">
+          <table class="matrix">
+            <thead>
+              <tr><th scope="col">Metric</th><th scope="col">The question it answers</th><th scope="col">Healthy signal</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>LTV : CAC</td><td>Is a customer worth more than it costs to get one?</td><td><span class="tag-pill tag-none">3x or better</span></td></tr>
+              <tr><td>CAC payback</td><td>How fast does a customer repay their acquisition cost?</td><td><span class="tag-pill tag-none">under 12&ndash;18 months</span></td></tr>
+              <tr><td>Net revenue retention</td><td>Would revenue grow even with zero new customers?</td><td><span class="tag-pill tag-none">100%+, great at 120%+</span></td></tr>
+              <tr><td>Gross margin</td><td>How much of each dollar is left to fund growth?</td><td><span class="tag-pill tag-none">70%+ for software</span></td></tr>
+              <tr><td>Burn multiple</td><td>How much cash does each dollar of new ARR cost?</td><td><span class="tag-pill tag-none">under 2x, great under 1.5x</span></td></tr>
+              <tr><td>Rule of 40</td><td>Is the growth-versus-profit tradeoff balanced?</td><td><span class="tag-pill tag-none">growth% + margin% ≥ 40</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="chart-foot">Benchmarks skew SaaS because that's where the canon formed. Hardware, marketplaces, and services each have their own reference points; the discipline of knowing yours is universal.</p>
+      </div>
+    </section>
+
+    <!-- ================= USE OF FUNDS ================= -->
+    <section class="section" id="funds">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 04 · The slide that closes rounds</p>
+        <h2>Use of funds: every dollar gets a job</h2>
+        <p class="section-sub">The strongest version of this slide isn't a pie chart. It's a set of bets, each with an owner, a cost, and a milestone. Here's the shape of a credible allocation for a hypothetical $2M seed raise.</p>
+      </div>
+
+      <div class="chart-panel reveal">
+        <h3 class="chart-title">A use-of-funds story, not a pie chart</h3>
+        <div class="bar-chart">
+          <div class="bar-row alloc-row" style="--bc:var(--navy)">
+            <span class="bar-name">Product &amp; engineering<span class="alloc-note">3 engineers</span></span>
+            <div class="bar-track"><div class="bar-fill" style="--w:40%; background:var(--navy)"><span class="bar-val">40%</span></div></div>
+          </div>
+          <div class="bar-row alloc-row" style="--bc:var(--rust)">
+            <span class="bar-name">Go-to-market<span class="alloc-note">2 AEs + channel spend</span></span>
+            <div class="bar-track"><div class="bar-fill" style="--w:35%; background:var(--rust)"><span class="bar-val">35%</span></div></div>
+          </div>
+          <div class="bar-row alloc-row" style="--bc:var(--forest)">
+            <span class="bar-name">Customer success &amp; ops<span class="alloc-note">1 CS hire + tooling</span></span>
+            <div class="bar-track"><div class="bar-fill" style="--w:15%; background:var(--forest)"><span class="bar-val">15%</span></div></div>
+          </div>
+          <div class="bar-row alloc-row" style="--bc:var(--ochre)">
+            <span class="bar-name">Buffer<span class="alloc-note">the plan will be wrong somewhere</span></span>
+            <div class="bar-track"><div class="bar-fill" style="--w:10%; background:var(--ochre)"><span class="bar-val">10%</span></div></div>
+          </div>
+        </div>
+        <p class="chart-foot">Each line pairs with a milestone: "GTM spend takes us from $30k to $150k MRR by month 12, which supports a Series A at current market multiples." That sentence is what gets funded.</p>
+      </div>
+    </section>
+
+    <!-- ================= SEQUENCE ================= -->
+    <section class="section spotlight" id="sequence">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow-hot">No. 05 · The tension</p>
+        <h2>But don't overbuild, either</h2>
+        <p class="section-sub">Paul Graham's most famous advice is "do things that don't scale," and he's right. The resolution: unscalable hacks are how you <em>find</em> the machine; scale-readiness is what you build <em>once the machine shows itself</em>. Premature scaling, per Startup Genome, is the most common way high-growth startups die.</p>
+      </div>
+
+      <div class="spotlight-grid">
+        <article class="spot-card reveal">
+          <h3>Before product-market fit</h3>
+          <ul class="tick-list">
+            <li><strong>Do things that don't scale.</strong> Recruit users one at a time. Founders do support. Learn at maximum speed.</li>
+            <li><strong>Write down what works as you learn it.</strong> Today's hack is tomorrow's playbook; capture it while it's fresh.</li>
+            <li><strong>Keep infrastructure boring and small.</strong> Buy, don't build. A monolith that ships beats microservices that don't.</li>
+          </ul>
+        </article>
+        <article class="spot-card reveal">
+          <h3>Premature scaling looks like</h3>
+          <ul class="cross-list">
+            <li><strong>Hiring a sales team</strong> before a founder can close repeatably. You can't delegate a motion you haven't found.</li>
+            <li><strong>Buying growth to mask weak retention.</strong> Paid acquisition on a leaky product just makes the leak more expensive.</li>
+            <li><strong>Gold-plating for imaginary users.</strong> Kubernetes for 40 customers, a compliance program with no enterprise pipeline, offices before revenue.</li>
+            <li><strong>Expanding to a second market</strong> before winning the first. Two half-won markets impress no one.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= CHECKLIST ================= -->
+    <section class="section" id="checklist">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 06 · Take the test</p>
+        <h2>The scale-readiness check</h2>
+        <p class="section-sub">Twelve statements, two per pillar. Check what's true today, honestly. Your progress saves in this browser, so revisit it as the answers change.</p>
+      </div>
+
+      <div class="check-panel reveal">
+        <div class="check-progress">
+          <span class="check-count"><span id="checkCount">0</span> / 12</span>
+          <div class="check-meter"><span id="checkMeter"></span></div>
+          <span class="check-verdict" id="checkVerdict">Not yet: fund the search, not the scale</span>
+        </div>
+        <div class="check-grid" id="checkGrid">
+          <span class="check-group-label">Unit economics</span>
+          <label class="check-item"><input type="checkbox" data-key="econ1"><span>We know our CAC, LTV, and payback period without opening a spreadsheet</span></label>
+          <label class="check-item"><input type="checkbox" data-key="econ2"><span>Gross margin is where our industry expects it, or we know exactly why not</span></label>
+          <span class="check-group-label">Go-to-market</span>
+          <label class="check-item"><input type="checkbox" data-key="gtm1"><span>At least one acquisition channel produces customers predictably and profitably</span></label>
+          <label class="check-item"><input type="checkbox" data-key="gtm2"><span>Our sales process is documented well enough that a new hire could run it</span></label>
+          <span class="check-group-label">Product &amp; infrastructure</span>
+          <label class="check-item"><input type="checkbox" data-key="infra1"><span>The product survives 10x current load without a rewrite</span></label>
+          <label class="check-item"><input type="checkbox" data-key="infra2"><span>Onboarding a new customer requires no engineering time</span></label>
+          <span class="check-group-label">Financial hygiene</span>
+          <label class="check-item"><input type="checkbox" data-key="fin1"><span>Books are clean, monthly close takes under two weeks, metrics live in one dashboard</span></label>
+          <label class="check-item"><input type="checkbox" data-key="fin2"><span>The cap table is current, papered, and free of surprises</span></label>
+          <span class="check-group-label">Playbooks &amp; team</span>
+          <label class="check-item"><input type="checkbox" data-key="ops1"><span>Every critical process has a written playbook, not a person who "just knows"</span></label>
+          <label class="check-item"><input type="checkbox" data-key="ops2"><span>No single person's departure would stall the company for a quarter</span></label>
+          <span class="check-group-label">The fundraising story</span>
+          <label class="check-item"><input type="checkbox" data-key="story1"><span>Every dollar of the next raise maps to a lever and a milestone</span></label>
+          <label class="check-item"><input type="checkbox" data-key="story2"><span>We can name the metrics the next round's investors will price us on</span></label>
+        </div>
+      </div>
+
+      <div class="section-head reveal" style="margin-top:60px">
+        <p class="eyebrow">Further reading</p>
+      </div>
+      <div class="doc-extras reveal">
+        <div class="doc-extra">
+          <h4>Do Things That Don't Scale</h4>
+          <p>Paul Graham's essay on why the unscalable phase is mandatory, at <a href="https://www.paulgraham.com/ds.html" target="_blank" rel="noopener">paulgraham.com ↗</a>.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>16 Startup Metrics</h4>
+          <p>Andreessen Horowitz's canonical definitions of the numbers investors ask about, at <a href="https://a16z.com/16-startup-metrics/" target="_blank" rel="noopener">a16z.com ↗</a>.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Startup Genome reports</h4>
+          <p>The research behind the premature-scaling statistic, plus annual ecosystem data, at <a href="https://startupgenome.com" target="_blank" rel="noopener">startupgenome.com ↗</a>.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Bessemer's Scaling Atlas</h4>
+          <p>Stage-by-stage benchmarks and operating guides for growth companies, at <a href="https://www.bvp.com/atlas" target="_blank" rel="noopener">bvp.com/atlas ↗</a>.</p>
+        </div>
+      </div>
+
+      <a class="chapter-link reveal" href="index.html#landscape">
+        <div>
+          <span class="cl-kicker">Previous chapter · No. 01</span>
+          <h3>The 10 paths to capital</h3>
+          <p class="section-sub">Now that you know what the machine looks like, pick the fuel: all ten funding sources, with documents, pitfalls, and contacts.</p>
+        </div>
+        <span class="cl-arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Apicus</strong> is an educational field guide, not legal or financial advice. Consult a startup attorney before signing any financing document.</p>
+    <p class="footer-fine">Named for Marcus Gavius Apicius, whose <em>De re coquinaria</em> is the oldest surviving cookbook. Consider this a cookbook of capital: recipes, ingredients, and how each one can burn.</p>
+    <p class="footer-fine">Built with HTML5, CSS &amp; vanilla JS.</p>
+  </footer>
+
+  <script src="site.js"></script>
+  <script src="scale.js"></script>
+</body>
+</html>

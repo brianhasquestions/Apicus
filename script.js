@@ -138,7 +138,8 @@ const SOURCES = [
     overview: [
       "VCs raise funds from institutions (pensions, endowments, family offices) and must return multiples of that money in about 10 years. That math shapes everything: they need each investment to plausibly return the entire fund, so they exclusively back companies aiming for massive outcomes.",
       "Seed rounds today are typically $1M to $4M on SAFEs; Series A ($8M to $20M) and beyond are priced equity rounds with board seats, protective provisions, and NVCA-style documents.",
-      "<strong>Take VC only if</strong> your market is genuinely huge, speed is a competitive weapon, and you're comfortable committing to a sell-or-IPO endgame. VC is a one-way door: once institutional money is in, a comfortable $5M-a-year lifestyle business is no longer an acceptable outcome to your board."
+      "<strong>Take VC only if</strong> your market is genuinely huge, speed is a competitive weapon, and you're comfortable committing to a sell-or-IPO endgame. VC is a one-way door: once institutional money is in, a comfortable $5M-a-year lifestyle business is no longer an acceptable outcome to your board.",
+      "<strong>How big is huge?</strong> It depends entirely on who you pitch: a fund's size sets the exit it needs, and the exit sets the market. <a href=\"#market\">The market math section</a> maps the ranges by investor type, from micro-VCs to national security funds."
     ],
     pitfalls: [
       { t: "Liquidation preference stacks", d: "Anything beyond a 1x non-participating preference means investors get paid multiples before you see a dollar. In a modest exit, founders with 30% ownership can walk away with nothing." },
@@ -549,6 +550,12 @@ document.addEventListener("click", e => {
   const opener = e.target.closest("[data-open]");
   if (opener) { openModal(opener.dataset.open); return; }
   if (e.target === backdrop) closeModal();
+});
+
+/* anchor links inside the modal close it, then the page scrolls to the target */
+modalBody.addEventListener("click", e => {
+  const anchor = e.target.closest('a[href^="#"]');
+  if (anchor) closeModal();
 });
 document.getElementById("modalClose").addEventListener("click", closeModal);
 document.addEventListener("keydown", e => { if (e.key === "Escape" && !backdrop.hidden) closeModal(); });

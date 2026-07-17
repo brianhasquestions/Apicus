@@ -6,7 +6,7 @@
   <title>Apicus · Every Way to Fund a Startup</title>
   <meta name="description" content="Apicus is a field guide to the 10 ways founders fund startups, from bootstrapping to strategic corporate capital, with SAFE documents, pitfalls, and real contacts for each.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
@@ -30,6 +30,7 @@
         <a href="#landscape">The 10 Paths</a>
         <a href="#spotlight">Strategic Capital</a>
         <a href="#compare">Compare</a>
+        <a href="#market">Market Math</a>
         <a href="#paperwork">SAFEs &amp; Docs</a>
         <a href="#rules">Golden Rules</a>
       </nav>
@@ -175,10 +176,67 @@
       </div>
     </section>
 
+    <!-- ================= MARKET MATH ================= -->
+    <section class="section" id="market">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 04 · How big is "huge"?</p>
+        <h2>Market math: what size means to each investor</h2>
+        <p class="section-sub">"VCs need a huge market" is true but useless, because "huge" is set by fund math: a fund's winners must be able to return the whole fund, so the fund's size dictates the outcome it needs, and the outcome dictates the market. A $50M seed fund and a $2B multistage fund are underwriting different companies. The ranges below are directional, but they're the ranges partners actually use.</p>
+      </div>
+
+      <div class="callout reveal" style="margin-bottom:22px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7h6"/><path d="M9 11h6"/><path d="M12 17h.01"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
+        <p><strong>The fund math, in one line:</strong> fund size &divide; ownership at exit = the exit that returns the fund once. A $100M fund holding 10% at exit needs a <strong>$1B exit</strong> from a single winner just to break even on the whole fund, and they want each bet to be capable of that alone. Before pitching a fund, run this math on their fund size; it tells you what market story they need to believe.</p>
+      </div>
+
+      <div class="matrix-panel reveal">
+        <h3 class="chart-title">What each type of investor wants to see</h3>
+        <div class="matrix-scroll">
+          <table class="matrix">
+            <thead>
+              <tr><th scope="col">Investor type</th><th scope="col">Typical fund</th><th scope="col">Outcome they underwrite</th><th scope="col">Market they want</th><th scope="col">How they actually size it</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Pre-seed &amp; micro-VC</td><td>$10M &ndash; $75M</td><td>$250M &ndash; $1B exits</td><td>$500M+ TAM, growing</td><td>A niche is fine if the wedge credibly expands</td></tr>
+              <tr><td>Seed funds</td><td>$50M &ndash; $200M</td><td>$1B+ outcomes</td><td>$1B+ TAM, $10B preferred</td><td>Bottom-up: real buyers &times; realistic price</td></tr>
+              <tr><td>Multistage SaaS / tech</td><td>$500M &ndash; $3B+</td><td>$10B+ IPO-scale winners</td><td>$10B+ TAM</td><td>The path to $100M+ ARR matters more than the TAM slide</td></tr>
+              <tr><td>Vertical SaaS specialists</td><td>$100M &ndash; $500M</td><td>$1B &ndash; $5B acquisitions</td><td>$1B &ndash; $5B TAM is acceptable</td><td>High win rate in the vertical plus expansion revenue per customer</td></tr>
+              <tr><td>Deep tech / frontier</td><td>$200M &ndash; $1B</td><td>New categories entirely</td><td>$10B+ future market</td><td>Cost curves: what becomes possible when the price drops 10x</td></tr>
+              <tr><td>Biotech / life sciences</td><td>$250M &ndash; $1B+</td><td>Approved drugs at scale</td><td>Indication-sized: $1B+ peak annual sales, or orphan with pricing power</td><td>Patients &times; price &times; penetration, per indication</td></tr>
+              <tr><td>Defense / national security</td><td>$100M &ndash; $1B</td><td>Program-of-record revenue</td><td>Budget lines, not TAM slides: programs measured in $1B+ per year</td><td>Procurement budgets and a dual-use commercial market on the side</td></tr>
+              <tr><td>Consumer</td><td>$100M &ndash; $1B</td><td>Breakout brands &amp; networks</td><td>$10B+ categories, 100M+ potential users</td><td>Frequency &times; spend, and winner-take-most dynamics</td></tr>
+              <tr><td>Fintech</td><td>$100M &ndash; $1B+</td><td>$1B+ outcomes</td><td>Revenue TAM: take rate &times; flows</td><td>The classic trap is citing payment volume as your market; they size your cut of it</td></tr>
+              <tr><td>Climate &amp; industrial</td><td>$200M &ndash; $1.5B</td><td>Infrastructure-scale companies</td><td>Trillion-scale energy and materials markets</td><td>Market size is assumed; unit economics at scale decide everything</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="chart-foot">Ranges are directional and shift with the market cycle. The invariant: pitch funds whose math your market can satisfy. A vertical product in a $2B niche is a bad pitch to a $2B multistage fund and a great pitch to a vertical specialist.</p>
+      </div>
+
+      <div class="chart-panel reveal">
+        <h3 class="chart-title">TAM, SAM, SOM: the three numbers on every market slide</h3>
+        <div class="bar-chart">
+          <div class="bar-row alloc-row" style="--bc:var(--navy)">
+            <span class="bar-name">TAM<span class="alloc-note">everyone who could conceivably buy</span></span>
+            <div class="bar-track"><div class="bar-fill" style="--w:90%; background:var(--navy)"><span class="bar-val">e.g. $6B</span></div></div>
+          </div>
+          <div class="bar-row alloc-row" style="--bc:var(--forest)">
+            <span class="bar-name">SAM<span class="alloc-note">the slice your product and geography reach today</span></span>
+            <div class="bar-track"><div class="bar-fill" style="--w:40%; background:var(--forest)"><span class="bar-val">$2.4B</span></div></div>
+          </div>
+          <div class="bar-row alloc-row" style="--bc:var(--rust)">
+            <span class="bar-name">SOM<span class="alloc-note">what you can credibly win in 3&ndash;5 years</span></span>
+            <div class="bar-track"><div class="bar-fill" style="--w:8%; background:var(--rust)"><span class="bar-val">$480M</span></div></div>
+          </div>
+        </div>
+        <p class="chart-foot">Investors ignore the TAM headline and sanity-check the SOM, because the SOM is what prices this round. Build all three bottom-up (buyers &times; price &times; attainable share) and be ready to defend every factor. A top-down "1% of a $60B market" is the fastest way to lose the room.</p>
+      </div>
+    </section>
+
     <!-- ================= PAPERWORK / SAFES ================= -->
     <section class="section" id="paperwork">
       <div class="section-head reveal">
-        <p class="eyebrow">No. 04 · Protect the company</p>
+        <p class="eyebrow">No. 05 · Protect the company</p>
         <h2>The paperwork: SAFEs &amp; legal documents</h2>
         <p class="section-sub">Y&nbsp;Combinator open-sourced the <strong>post-money SAFE</strong> (Simple Agreement for Future Equity), the default instrument for early fundraising. There are exactly <strong>three official variants</strong>, plus an optional side letter. All are free.</p>
       </div>
@@ -254,7 +312,7 @@
     <!-- ================= GOLDEN RULES ================= -->
     <section class="section" id="rules">
       <div class="section-head reveal">
-        <p class="eyebrow">No. 05 · Before you sign anything</p>
+        <p class="eyebrow">No. 06 · Before you sign anything</p>
         <h2>Five golden rules of raising</h2>
       </div>
       <ol class="rules-list">
@@ -306,7 +364,7 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
-  <script src="site.js"></script>
+  <script src="script.js?v=4"></script>
+  <script src="site.js?v=4"></script>
 </body>
 </html>

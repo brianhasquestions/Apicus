@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apicus · The Document Library</title>
+  <meta name="description" content="Every legal document a startup raise will ask of you: formation stack, SAFEs and convertible notes, the NVCA priced-round suite, compliance filings, and the paperwork for all 10 funding paths.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9c0-4 3-6 7-6 0 4-3 6-7 6Z"/><path d="M12 13c0-3-2.5-5-5.5-5 0 3 2.5 5 5.5 5Z"/></svg>
+        </span>
+        <span>apicus<em>.org</em></span>
+      </a>
+      <nav class="nav-pages" aria-label="Pages">
+        <a class="page-link" href="index.html">Funding Guide</a>
+        <a class="page-link" href="scale.html">Scale-Ready</a>
+        <a class="page-link" href="documents.html" aria-current="page">Documents</a>
+      </nav>
+    </div>
+    <div class="nav-sections-row">
+      <nav class="nav-links" aria-label="Sections on this page">
+        <a href="#formation">Formation</a>
+        <a href="#instruments">First Money</a>
+        <a href="#priced">The Priced Round</a>
+        <a href="#mechanics">Compliance</a>
+        <a href="#people">People &amp; IP</a>
+        <a href="#map">The Map</a>
+      </nav>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero hero-compact" id="hero">
+      <div class="hero-inner">
+        <p class="hero-kicker reveal">Apicus · chapter no. 03</p>
+        <h1 class="hero-title">
+          <span class="line"><span>The <em class="accent-grad">document</em> library.</span></span>
+          <span class="line hero-sub-line"><span>Every raise is a paper trail. Here is all of it.</span></span>
+        </h1>
+        <p class="hero-sub reveal">
+          The SAFE gets the headlines, but a fundable company is built on a stack of documents that starts
+          the day you incorporate. Nearly all of them have <strong>free, open-source, industry-standard versions</strong>.
+          Use the standards verbatim: every creative deviation costs lawyer hours on both sides and signals
+          inexperience to investors.
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#formation">Start at incorporation
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#map">Documents by funding path</a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-num" data-count="30" data-suffix=" days">0</span>
+            <span class="stat-label">hard deadline to file an 83(b) election</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="15" data-suffix=" days">0</span>
+            <span class="stat-label">to file SEC Form D after first sale</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="6">0</span>
+            <span class="stat-label">core documents in an NVCA priced round</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="0" data-prefix="$">0</span>
+            <span class="stat-label">cost of every standard template here</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FORMATION ================= -->
+    <section class="section" id="formation">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 01 · Before any money</p>
+        <h2>The formation stack</h2>
+        <p class="section-sub">Investors diligence these before they wire a dollar. Get them right at incorporation and they never come up again; get them wrong and they become the reason a round stalls. Services like <a href="https://www.clerky.com" target="_blank" rel="noopener">Clerky</a>, <a href="https://stripe.com/atlas" target="_blank" rel="noopener">Stripe Atlas</a>, and <a href="https://www.cooleygo.com/documents/" target="_blank" rel="noopener">Cooley GO</a> generate the standard versions.</p>
+      </div>
+
+      <div class="doc-extras reveal">
+        <div class="doc-extra">
+          <h4>Certificate of Incorporation</h4>
+          <p>The company's birth certificate, filed with the state. Investors expect a Delaware C-corp; most standard financing documents assume it.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Bylaws</h4>
+          <p>The internal operating rules: board mechanics, officers, meetings, stock transfers. Standard forms exist; almost nobody negotiates them.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Founder Stock Purchase Agreements</h4>
+          <p>Founders buy their shares early and cheap, with vesting (typically 4 years, 1-year cliff). Vesting protects the company and the other founders if someone walks.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>83(b) Election</h4>
+          <p>A one-page IRS filing that must be postmarked within <strong>30 days</strong> of a restricted stock purchase. Miss it and vesting becomes a recurring tax bill. The single most unforgiving deadline in startup law.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Invention Assignment (CIIA / PIIA)</h4>
+          <p>Assigns founder and employee IP to the company. Every investor's diligence checklist asks whether all past and present contributors have signed one.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Equity Incentive Plan</h4>
+          <p>The option pool and its rulebook, adopted by the board. Needed before your first employee grant; sized and re-sized at every priced round.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FIRST MONEY ================= -->
+    <section class="section" id="instruments">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 02 · First money in</p>
+        <h2>Early-stage instruments, compared</h2>
+        <p class="section-sub">The SAFE won the standards war, but it isn't the only instrument you'll meet. Some investors still prefer convertible notes; a few use 500 Global's KISS forms. Know the differences before someone else's counsel picks for you.</p>
+      </div>
+
+      <div class="matrix-panel reveal">
+        <div class="matrix-scroll">
+          <table class="matrix">
+            <thead>
+              <tr><th scope="col">Instrument</th><th scope="col">Interest</th><th scope="col">Maturity date</th><th scope="col">Key terms</th><th scope="col">Reach for it when</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Post-money SAFE</td><td><span class="tag-pill tag-none">none</span></td><td><span class="tag-pill tag-none">none</span></td><td>Cap, discount, or MFN</td><td>Default choice: fastest, cheapest, best understood</td></tr>
+              <tr><td>Convertible note</td><td>2&ndash;8%</td><td>12&ndash;24 months</td><td>Cap + discount, repayable at maturity</td><td>The investor wants debt protections or a forcing date</td></tr>
+              <tr><td>KISS (debt / equity)</td><td>~5% / none</td><td>18 months / none</td><td>Cap or discount, MFN, info rights</td><td>An investor insists on 500 Global's forms</td></tr>
+              <tr><td>Promissory note</td><td>Market rate</td><td>Fixed</td><td>No conversion: it's just a loan</td><td>Family money that should stay a loan, not equity</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="chart-foot">A note's maturity date is a live grenade: if you haven't raised by then, the investor can technically demand repayment. Most extend; some don't. The SAFE removed that failure mode, which is why it won.</p>
+      </div>
+
+      <div class="doc-extras reveal">
+        <div class="doc-extra">
+          <h4>YC Post-money SAFE</h4>
+          <p>All three official variants, the pro rata side letter, and the user guide, covered in depth in <a href="index.html#paperwork">chapter 01 ↗</a> and downloadable at <a href="https://www.ycombinator.com/documents" target="_blank" rel="noopener">ycombinator.com/documents ↗</a>.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Convertible note (Cooley Seed Note)</h4>
+          <p>A standard convertible promissory note with term sheet, structured to avoid a separate purchase agreement. Free generator at <a href="https://www.cooleygo.com/documents/series-seed-notes-financing-package/" target="_blank" rel="noopener">Cooley GO ↗</a>.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>KISS documents (500 Global)</h4>
+          <p>Debt and equity flavors of 500's open-source instrument, hosted with a free generator at <a href="https://www.cooleygo.com/documents/kiss-convertible-debt-equity-agreements/" target="_blank" rel="noopener">Cooley GO ↗</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRICED ROUND ================= -->
+    <section class="section" id="priced">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 03 · When the round gets priced</p>
+        <h2>The NVCA priced-round stack</h2>
+        <p class="section-sub">A Series A (and any priced equity round) runs on six documents. The National Venture Capital Association publishes model versions of all of them, free at <a href="https://nvca.org/model-legal-documents/" target="_blank" rel="noopener">nvca.org/model-legal-documents ↗</a>. Your counsel starts from these; so does theirs.</p>
+      </div>
+
+      <ol class="rules-list">
+        <li class="reveal"><span class="rule-num">01</span><div><h3>Term Sheet</h3><p>The non-binding summary of the whole deal: valuation, preferences, board, option pool. Negotiate hard here; everything after is drafting. YC publishes an annotated founder-friendly version at <a href="https://www.ycombinator.com/series_a_term_sheet" target="_blank" rel="noopener">ycombinator.com ↗</a>.</p></div></li>
+        <li class="reveal"><span class="rule-num">02</span><div><h3>Stock Purchase Agreement (SPA)</h3><p>The actual sale: who buys how many shares at what price, plus your representations and warranties about the company. The disclosure schedule attached to it is where you list every exception, honestly.</p></div></li>
+        <li class="reveal"><span class="rule-num">03</span><div><h3>Amended &amp; Restated Certificate of Incorporation</h3><p>The charter, refiled to create the new preferred stock: its liquidation preference, conversion rights, anti-dilution protection, and protective provisions. This is where preference multiples hide.</p></div></li>
+        <li class="reveal"><span class="rule-num">04</span><div><h3>Investors' Rights Agreement (IRA)</h3><p>Information rights, registration rights, and pro rata rights for the new investors. The reporting obligations you agree to here are the ones you'll live with every quarter.</p></div></li>
+        <li class="reveal"><span class="rule-num">05</span><div><h3>Voting Agreement</h3><p>Board composition and how shareholders must vote on it, plus drag-along rights that let a majority force a sale through. Board control is decided here, not in the term sheet.</p></div></li>
+        <li class="reveal"><span class="rule-num">06</span><div><h3>Right of First Refusal &amp; Co-Sale Agreement</h3><p>Controls what happens when a founder wants to sell shares: the company and investors get first claim, and investors can sell alongside. Standard, but read the transfer restrictions.</p></div></li>
+      </ol>
+
+      <div class="callout reveal" style="margin-top:22px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+        <p><strong>Raising a smaller priced round?</strong> The open-source <a href="https://www.cooleygo.com/documents/series-seed-equity-financing-package/" target="_blank" rel="noopener">Series Seed package</a> compresses the NVCA stack into a lighter set built for seed-sized equity rounds. The originals live on <a href="https://github.com/CooleyLLP/seriesseed" target="_blank" rel="noopener">GitHub under a public-domain license</a>.</p>
+      </div>
+    </section>
+
+    <!-- ================= MECHANICS / COMPLIANCE ================= -->
+    <section class="section" id="mechanics">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 04 · The round around the round</p>
+        <h2>Mechanics, consents &amp; compliance</h2>
+        <p class="section-sub">The instrument is one signature among many. Every financing drags a tail of approvals and filings, and two of them have government deadlines.</p>
+      </div>
+
+      <div class="doc-extras reveal">
+        <div class="doc-extra">
+          <h4>Board &amp; stockholder consents</h4>
+          <p>Written approvals authorizing the financing, the new shares, and any charter amendment. Your counsel drafts them; your job is keeping the signer list current.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>SEC Form D</h4>
+          <p>The federal notice for a Reg D exempt raise, due within <strong>15 days of the first sale</strong>. Simple, free, filed online, and easy to forget. State "blue sky" notices often follow it.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Accredited investor questionnaire</h4>
+          <p>A short form each investor completes so you can rely on the Reg D exemption. Collect it before the wire, not after.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Side letters</h4>
+          <p>Per-investor extras: pro rata rights, information rights, MFN clauses. Each one is a small promise that compounds across rounds, so keep a register of every letter you've signed.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Cap table</h4>
+          <p>Not legally a document, practically the most important one. Keep it in real software (Carta, Pulley, or similar) from the first SAFE, not in a spreadsheet named final_v7.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>The data room</h4>
+          <p>Diligence-ready copies of everything on this page plus financials, contracts, and IP filings. Chapter 02's <a href="scale.html#pillars">financial hygiene pillar ↗</a> covers keeping it always ready.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PEOPLE & IP ================= -->
+    <section class="section" id="people">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 05 · People &amp; IP</p>
+        <h2>The agreements around your team</h2>
+        <p class="section-sub">Diligence always asks the same question: does the company actually own its product, and is the team actually bound to it? These four answer it.</p>
+      </div>
+
+      <div class="doc-extras reveal">
+        <div class="doc-extra">
+          <h4>Offer letter + PIIA</h4>
+          <p>Every employee signs both: the offer (at-will, equity subject to board approval) and the proprietary information and invention assignment. No exceptions, including and especially the founders' friends.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Advisor agreement (FAST)</h4>
+          <p>The Founder Institute's standard advisor template: 0.1&ndash;0.5% equity, vesting, defined expectations. Free at <a href="https://fi.co/fast" target="_blank" rel="noopener">fi.co/fast ↗</a>. Never grant advisor equity on a handshake.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Contractor agreement with IP assignment</h4>
+          <p>Contractors own their work by default under copyright law. Without an explicit assignment clause, that landing page or codebase may not be yours to sell.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Mutual NDA</h4>
+          <p>Useful with corporates, partners, and vendors. One norm to know: venture investors do not sign NDAs to hear a pitch, and asking marks you as new. Standard forms at <a href="https://www.cooleygo.com/documents/" target="_blank" rel="noopener">Cooley GO ↗</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MAP ================= -->
+    <section class="section" id="map">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 06 · Cross-reference</p>
+        <h2>The paperwork for every funding path</h2>
+        <p class="section-sub">Chapter 01's ten funding sources, mapped to the documents each one will put in front of you.</p>
+      </div>
+
+      <div class="matrix-panel reveal">
+        <div class="matrix-scroll">
+          <table class="matrix">
+            <thead>
+              <tr><th scope="col">Funding path</th><th scope="col">Core documents</th><th scope="col">Watch for</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Bootstrapping</td><td>Customer contracts: MSA, order forms, terms of service</td><td>Revenue is your instrument; make the contracts assignable for a future sale</td></tr>
+              <tr><td>Friends &amp; Family</td><td>SAFE or promissory note, one-page investment memo</td><td>Paper it even when they insist you don't need to</td></tr>
+              <tr><td>Angels &amp; Syndicates</td><td>SAFE, pro rata side letter, accredited investor questionnaire</td><td>Track every side letter; MFN clauses stack</td></tr>
+              <tr><td>Venture Capital</td><td>Term sheet, then the six-document NVCA stack, Form D</td><td>Preferences and board control live in the charter and voting agreement</td></tr>
+              <tr><td>Strategic &amp; Corporate</td><td>Standard equity docs <em>plus separate</em> commercial, pilot, or license agreements</td><td>Keep investment and commercial terms in different documents you can renegotiate independently</td></tr>
+              <tr><td>Accelerators</td><td>Program agreement + the program's SAFEs (YC: $125k SAFE + $375k MFN SAFE)</td><td>Read the follow-on and pro rata terms before demo day, not after</td></tr>
+              <tr><td>Crowdfunding</td><td>SEC Form C, platform agreement, Crowd SAFE or SPV docs</td><td>Form C means public financials and annual reports; budget for compliance</td></tr>
+              <tr><td>Grants</td><td>Application (federal: SF-424 family), award agreement, progress reports</td><td>The award agreement scopes what the money may fund; pivots need approval</td></tr>
+              <tr><td>Loans &amp; Venture Debt</td><td>Loan agreement, promissory note, security agreement, personal guarantee, warrant</td><td>Covenants and the amortization start date matter more than the rate</td></tr>
+              <tr><td>Revenue-Based Financing</td><td>Revenue purchase agreement, ACH authorization</td><td>Compute the effective APR yourself before signing; the fee is not the rate</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="callout reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+        <p><strong>Templates draft; lawyers review.</strong> Every document on this page has a free standard version, and you should still have startup counsel review what you sign. An hour of review on standard docs is cheap. Unwinding a bespoke document three years later is not.</p>
+      </div>
+
+      <a class="chapter-link reveal" href="index.html#paperwork">
+        <div>
+          <span class="cl-kicker">Back to chapter · No. 01</span>
+          <h3>The SAFE, in depth</h3>
+          <p class="section-sub">The three YC variants, conversion examples, and the post-money math that dilutes founders, not investors.</p>
+        </div>
+        <span class="cl-arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Apicus</strong> is an educational field guide, not legal or financial advice. Consult a startup attorney before signing any financing document.</p>
+    <p class="footer-fine">Named for Marcus Gavius Apicius, whose <em>De re coquinaria</em> is the oldest surviving cookbook. Consider this a cookbook of capital: recipes, ingredients, and how each one can burn.</p>
+    <p class="footer-fine">Built with HTML5, CSS &amp; vanilla JS.</p>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

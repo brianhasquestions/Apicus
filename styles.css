@@ -84,6 +84,17 @@ a { color: var(--navy); }
 }
 .nav-links a:hover { color: var(--ink); border-color: var(--hairline); }
 .nav-links a.active { color: var(--ink); background: var(--card-2); border-color: var(--hairline); }
+.nav-toggle {
+  display: none;
+  width: 40px; height: 40px; flex: none;
+  place-items: center;
+  background: var(--card); border: 1.5px solid var(--ink); border-radius: var(--radius);
+  color: var(--ink); cursor: pointer;
+}
+.nav-toggle svg { width: 20px; height: 20px; }
+.nav-toggle .icon-close { display: none; }
+.nav.menu-open .nav-toggle .icon-open { display: none; }
+.nav.menu-open .nav-toggle .icon-close { display: block; }
 .scroll-progress { height: 3px; background: transparent; }
 .scroll-progress span {
   display: block; height: 100%; width: 0;
@@ -820,7 +831,29 @@ body.modal-open { overflow: hidden; }
   .spotlight-grid { grid-template-columns: 1fr; }
   .bar-row { grid-template-columns: 110px 1fr; }
   .bar-name { font-size: 0.78rem; }
+  .nav-toggle { display: grid; }
+  .nav-inner { flex-wrap: wrap; }
+  .nav-pages { display: none; }
   .nav-sections-row { display: none; }
+  .nav.menu-open .nav-pages {
+    display: flex; flex-direction: column; align-items: stretch;
+    width: 100%; order: 3; gap: 2px;
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--hairline);
+  }
+  .nav.menu-open .nav-pages .page-link { padding: 12px 10px; }
+  .nav.menu-open .nav-sections-row { display: block; border-top: none; }
+  .nav.menu-open .nav-sections-row .nav-links {
+    flex-direction: column; align-items: stretch;
+    gap: 0; padding: 0 24px 16px;
+  }
+  .nav.menu-open .nav-sections-row .nav-links::before {
+    content: "On this page";
+    font-family: var(--mono); font-size: 0.6rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--ink-3); padding: 8px 10px 4px;
+  }
+  .nav.menu-open .nav-sections-row .nav-links a { padding: 9px 10px; font-size: 0.7rem; }
   .stat { border-left: none; padding-left: 0; }
   .check-grid { grid-template-columns: 1fr; }
   .alloc-row { grid-template-columns: 120px 1fr; }

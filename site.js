@@ -36,6 +36,29 @@ const apicusCounterIO = new IntersectionObserver(entries => {
 }, { threshold: 0.6 });
 document.querySelectorAll(".stat-num").forEach(el => apicusCounterIO.observe(el));
 
+/* mobile menu toggle */
+const apicusNav = document.querySelector(".nav");
+const apicusNavToggle = document.querySelector(".nav-toggle");
+if (apicusNav && apicusNavToggle) {
+  const closeMenu = () => {
+    apicusNav.classList.remove("menu-open");
+    apicusNavToggle.setAttribute("aria-expanded", "false");
+  };
+  apicusNavToggle.addEventListener("click", () => {
+    const open = apicusNav.classList.toggle("menu-open");
+    apicusNavToggle.setAttribute("aria-expanded", String(open));
+  });
+  apicusNav.addEventListener("click", e => {
+    if (e.target.closest(".nav-pages a, .nav-links a")) closeMenu();
+  });
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && apicusNav.classList.contains("menu-open")) {
+      closeMenu();
+      apicusNavToggle.focus();
+    }
+  });
+}
+
 /* scroll progress bar + active section link */
 const apicusProgressBar = document.getElementById("progressBar");
 const apicusNavLinks = [...document.querySelectorAll(".nav-links a")]

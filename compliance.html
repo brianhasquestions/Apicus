@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apicus · Compliance: SOC 2, ISO 27001 &amp; When You Actually Need Them</title>
+  <meta name="description" content="SOC 2, ISO 27001, HIPAA, PCI, FedRAMP: what each framework is, what it costs, and the decision framework for when to pursue certification versus focusing on product and sales.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9c0-4 3-6 7-6 0 4-3 6-7 6Z"/><path d="M12 13c0-3-2.5-5-5.5-5 0 3 2.5 5 5.5 5Z"/></svg>
+        </span>
+        <span>apicus<em>.org</em></span>
+      </a>
+      <nav class="nav-pages" aria-label="Pages">
+        <a class="page-link" href="index.html">Funding Guide</a>
+        <a class="page-link" href="scale.html">Scale-Ready</a>
+        <a class="page-link" href="documents.html">Documents</a>
+        <a class="page-link" href="board.html">Advisors &amp; Board</a>
+        <a class="page-link" href="compliance.html" aria-current="page">Compliance</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="nav-sections-row">
+      <nav class="nav-links" aria-label="Sections on this page">
+        <a href="#when">The Timing Call</a>
+        <a href="#frameworks">The Frameworks</a>
+        <a href="#timelines">What They Take</a>
+        <a href="#ready">Compliance-Ready</a>
+        <a href="#pitfalls">Pitfalls</a>
+      </nav>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero hero-compact" id="hero">
+      <div class="hero-inner">
+        <p class="hero-kicker reveal">Apicus · chapter no. 05</p>
+        <h1 class="hero-title">
+          <span class="line"><span>Compliance: <em class="accent-grad">when</em>,</span></span>
+          <span class="line"><span>not just what.</span></span>
+          <span class="line hero-sub-line"><span>SOC 2 too early burns runway. Too late burns deals.</span></span>
+        </h1>
+        <p class="hero-sub reveal">
+          One of the hardest founder calls is when to pursue SOC 2, ISO 27001, and their cousins versus
+          pouring those months into product and sales. The resolution:
+          <strong>certification is a sales artifact, not a security artifact.</strong> You pursue it when it
+          unblocks revenue, you prepare for it long before that, and you never confuse it with actually
+          being secure.
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#when">Is it time? Take the check
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#frameworks">See the frameworks</a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-num" data-count="1">0</span>
+            <span class="stat-label">blocked enterprise deal is the classic trigger</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="3" data-suffix=" mo">0</span>
+            <span class="stat-label">typical path to a SOC 2 Type I</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="12" data-suffix=" mo">0</span>
+            <span class="stat-label">typical path to ISO 27001</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="0">0</span>
+            <span class="stat-label">certifications needed pre-PMF, unless you touch regulated data</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHEN ================= -->
+    <section class="section" id="when">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 01 · The timing call</p>
+        <h2>Sales, product, or compliance?</h2>
+        <p class="section-sub">The mistake runs both directions. Certify at idea stage and you spend a quarter of runway proving controls for customers you don't have. Wait until procurement asks and you're six months from a signature the deal needed last month. The market tells you when; you just have to read the signals honestly.</p>
+      </div>
+
+      <div class="check-panel reveal">
+        <h3 class="chart-title">Is it time? Check what's true today</h3>
+        <div class="check-grid" id="whenGrid" style="grid-template-columns: 1fr">
+          <label class="check-item"><input type="checkbox" data-q="regulated"><span>We handle regulated data: health records, payment cards, or government systems</span></label>
+          <label class="check-item"><input type="checkbox" data-q="blocked"><span>A real deal has stalled or died in a security review or vendor assessment</span></label>
+          <label class="check-item"><input type="checkbox" data-q="questionnaires"><span>Security questionnaires are showing up in our pipeline</span></label>
+          <label class="check-item"><input type="checkbox" data-q="enterprise"><span>Our target buyer is enterprise or mid-market with a procurement process</span></label>
+        </div>
+        <p class="balance-verdict" id="whenVerdict" style="margin-top:16px"></p>
+      </div>
+
+      <div class="spotlight-grid" style="margin-top:22px">
+        <article class="spot-card reveal">
+          <h3>Signals it's time to certify</h3>
+          <ul class="tick-list">
+            <li><strong>A deal died in security review.</strong> That's the market pricing the certification for you: it now pays for itself.</li>
+            <li><strong>Questionnaires arrive before demos.</strong> When prospects ask about SOC 2 in the first call, the report has become table stakes in your segment.</li>
+            <li><strong>You're moving upmarket.</strong> Enterprise procurement gates on attestations; entering that motion without one adds months to every cycle.</li>
+            <li><strong>Your data class demands it.</strong> Health data means HIPAA obligations from day one. Card data means PCI scope from the first transaction. Government means the clock starts years before revenue.</li>
+          </ul>
+        </article>
+        <article class="spot-card reveal">
+          <h3>Signals it's too early</h3>
+          <ul class="cross-list">
+            <li><strong>No enterprise pipeline.</strong> SMB and consumer buyers almost never ask. Certifying for an imagined future buyer is runway spent on theater.</li>
+            <li><strong>Pre-product-market fit.</strong> If the product may pivot, the audit scope pivots with it and the money is gone. Do the security basics instead.</li>
+            <li><strong>Nobody has asked.</strong> Not once, not softly. Compliance pulled by no customer is a founder anxiety purchase.</li>
+            <li><strong>You'd be certifying to avoid selling.</strong> An audit has a checklist and a finish line; sales doesn't. Beware which one feels more comfortable.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= FRAMEWORKS ================= -->
+    <section class="section" id="frameworks">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 02 · The alphabet</p>
+        <h2>The frameworks, decoded</h2>
+        <p class="section-sub">Two useful distinctions. Attestations and certifications (SOC 2, ISO 27001) are voluntary and exist to win deals. Regulations (HIPAA, PCI DSS, GDPR) are not optional and attach the moment you touch the data. Costs below are commonly cited ranges for audit and preparation; your scope moves them.</p>
+      </div>
+
+      <div class="matrix-panel reveal">
+        <div class="matrix-scroll">
+          <table class="matrix">
+            <thead>
+              <tr><th scope="col">Framework</th><th scope="col">What it is</th><th scope="col">Who asks for it</th><th scope="col">Typical cost</th><th scope="col">When it applies</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>SOC 2 Type I</td><td>Auditor attests your security controls exist, at a point in time</td><td>US B2B software buyers</td><td>$15k &ndash; $40k</td><td><span class="tag-pill tag-equity">when sales demand it</span></td></tr>
+              <tr><td>SOC 2 Type II</td><td>Same controls, observed operating over 3&ndash;12 months. The one enterprises actually want</td><td>US enterprise procurement</td><td>$25k &ndash; $60k</td><td><span class="tag-pill tag-equity">when sales demand it</span></td></tr>
+              <tr><td>ISO 27001</td><td>Certified information security management system, audited against the international standard</td><td>European and global enterprise</td><td>$20k &ndash; $60k</td><td><span class="tag-pill tag-equity">when sales demand it</span></td></tr>
+              <tr><td>HIPAA</td><td>US law for protected health information. Not a certificate: obligations plus BAAs with every partner</td><td>Healthcare customers, and the law</td><td>Legal + engineering time</td><td><span class="tag-pill tag-debt">day one with PHI</span></td></tr>
+              <tr><td>PCI DSS</td><td>Card-industry security standard, leveled by transaction volume</td><td>Card networks and processors</td><td>Near zero if you scope cards out to your payment processor</td><td><span class="tag-pill tag-debt">day one with card data</span></td></tr>
+              <tr><td>GDPR / state privacy</td><td>Privacy law that attaches by user geography, not by your location</td><td>Regulators, plus enterprise DPAs</td><td>Legal + engineering time</td><td><span class="tag-pill tag-debt">day one with EU / covered users</span></td></tr>
+              <tr><td>FedRAMP / CMMC</td><td>US federal cloud authorization and the DoD contractor version</td><td>Government buyers</td><td>$250k+</td><td><span class="tag-pill tag-debt">years before gov revenue</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="chart-foot">Standard sources: <a href="https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2" target="_blank" rel="noopener">AICPA (SOC 2)</a>, <a href="https://www.iso.org/standard/27001" target="_blank" rel="noopener">ISO 27001</a>, <a href="https://www.hhs.gov/hipaa" target="_blank" rel="noopener">HHS (HIPAA)</a>, <a href="https://www.pcisecuritystandards.org" target="_blank" rel="noopener">PCI Security Standards Council</a>, <a href="https://www.fedramp.gov" target="_blank" rel="noopener">FedRAMP</a>. Automation platforms can collect audit evidence for you, but the attestation comes from an auditor and the security comes from your practices; no tool confers either.</p>
+      </div>
+    </section>
+
+    <!-- ================= TIMELINES ================= -->
+    <section class="section" id="timelines">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 03 · The real cost is months</p>
+        <h2>What each path actually takes</h2>
+        <p class="section-sub">Dollar costs are survivable; the months are the strategic price. Every timeline below is founder and engineering attention that isn't going into product or pipeline, which is exactly why the timing call matters.</p>
+      </div>
+
+      <div class="chart-panel reveal">
+        <h3 class="chart-title">Typical time from start to report in hand</h3>
+        <div class="bar-chart">
+          <div class="bar-row alloc-row" style="--bc:var(--navy)">
+            <span class="bar-name">SOC 2 Type I<span class="alloc-note">the bridge: controls in place, point-in-time</span></span>
+            <div class="bar-track"><div class="bar-fill" style="--w:13%; background:var(--navy)"><span class="bar-val">~3 mo</span></div></div>
+          </div>
+          <div class="bar-row alloc-row" style="--bc:var(--navy)">
+            <span class="bar-name">SOC 2 Type II<span class="alloc-note">includes the observation window</span></span>
+            <div class="bar-track"><div class="bar-fill" style="--w:38%; background:var(--navy)"><span class="bar-val">~9 mo</span></div></div>
+          </div>
+          <div class="bar-row alloc-row" style="--bc:var(--navy)">
+            <span class="bar-name">ISO 27001<span class="alloc-note">ISMS build + stage 1 and 2 audits</span></span>
+            <div class="bar-track"><div class="bar-fill" style="--w:50%; background:var(--navy)"><span class="bar-val">~12 mo</span></div></div>
+          </div>
+          <div class="bar-row alloc-row" style="--bc:var(--navy)">
+            <span class="bar-name">FedRAMP<span class="alloc-note">authorization, agency sponsor required</span></span>
+            <div class="bar-track"><div class="bar-fill" style="--w:88%; background:var(--navy)"><span class="bar-val">~18&ndash;24 mo</span></div></div>
+          </div>
+        </div>
+        <p class="chart-foot">Common sequencing: start SOC 2 Type I as the bridge that unblocks deals in months, begin the Type II observation window immediately behind it, and add ISO 27001 only when European or global enterprise pipeline justifies a second audit regime. Both renew annually: compliance is a subscription, not a purchase.</p>
+      </div>
+    </section>
+
+    <!-- ================= READY ================= -->
+    <section class="section" id="ready">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 04 · The middle path</p>
+        <h2>Compliance-ready without certifying</h2>
+        <p class="section-sub">The resolution to the timing dilemma: practice security from day one so that certification, whenever sales demands it, is a formality instead of a rebuild. All of this is cheap now and expensive to retrofit.</p>
+      </div>
+
+      <div class="doc-extras reveal">
+        <div class="doc-extra">
+          <h4>The technical basics</h4>
+          <p>SSO and MFA everywhere, encryption at rest and in transit, least-privilege access, offboarding that actually revokes, logging on, backups tested. This is most of a SOC 2 before an auditor ever appears.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>The paper basics</h4>
+          <p>A short security policy, an incident response plan, a vendor list with what data each one touches, and access reviews on a calendar. Auditors call these controls; customers call them answers.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>A security page and a filled questionnaire</h4>
+          <p>One public page describing your practices, plus a completed standard questionnaire (CAIQ or SIG) you can return within a day. This alone carries many mid-market deals past review without any certification.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Scope discipline</h4>
+          <p>Keep regulated data out of your systems where you can: cards stay with the payment processor, health data stays out until healthcare is truly the market. The cheapest compliance is the scope you never take on.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PITFALLS ================= -->
+    <section class="section" id="pitfalls">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 05 · How it goes wrong</p>
+        <h2>The compliance pitfalls</h2>
+      </div>
+      <ol class="rules-list">
+        <li class="reveal"><span class="rule-num">01</span><div><h3>Certifying before anyone asked.</h3><p>A quarter of runway and your best engineer's attention, spent to impress customers who buy on product. Let a blocked deal or a regulated data class pull it; don't push it.</p></div></li>
+        <li class="reveal"><span class="rule-num">02</span><div><h3>Treating Type I as the finish line.</h3><p>Enterprises read Type I as "started, not finished." Begin the Type II observation window the day Type I lands, or you'll re-stall in the same procurement queue next quarter.</p></div></li>
+        <li class="reveal"><span class="rule-num">03</span><div><h3>Compliance theater.</h3><p>Dashboards full of green checks with MFA half-deployed and offboarding by memory. Auditors sample evidence; breaches sample reality. The practices are the product; the report is the receipt.</p></div></li>
+        <li class="reveal"><span class="rule-num">04</span><div><h3>Letting the audit freeze the roadmap.</h3><p>Scope the audit to the product boundary that customers touch, not the whole company. A well-scoped audit runs beside development; a badly scoped one stops it.</p></div></li>
+        <li class="reveal"><span class="rule-num">05</span><div><h3>Forgetting it renews.</h3><p>SOC 2 and ISO 27001 are annual. Budget the audit, the evidence upkeep, and the calendar reviews as a permanent operating cost from the first engagement, because that's what they are.</p></div></li>
+      </ol>
+
+      <a class="chapter-link reveal" href="board.html">
+        <div>
+          <span class="cl-kicker">Previous chapter · No. 04</span>
+          <h3>Advisors &amp; board construction</h3>
+          <p class="section-sub">Advisor equity norms, seat math by stage, and who really controls the company.</p>
+        </div>
+        <span class="cl-arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Apicus</strong> is an educational field guide, not legal or financial advice. Consult a startup attorney before signing any financing document.</p>
+    <p class="footer-fine">Named for Marcus Gavius Apicius, whose <em>De re coquinaria</em> is the oldest surviving cookbook. Consider this a cookbook of capital: recipes, ingredients, and how each one can burn.</p>
+    <p class="footer-fine">Built with HTML5, CSS &amp; vanilla JS.</p>
+  </footer>
+
+  <script src="site.js?v=7"></script>
+  <script src="compliance.js?v=7"></script>
+</body>
+</html>

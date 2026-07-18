@@ -6,7 +6,7 @@
   <title>Apicus · Every Way to Fund a Startup</title>
   <meta name="description" content="Apicus is a field guide to the 10 ways founders fund startups, from bootstrapping to strategic corporate capital, with SAFE documents, pitfalls, and real contacts for each.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
 
@@ -37,6 +37,7 @@
         <a href="#compare">Compare</a>
         <a href="#market">Market Math</a>
         <a href="#paperwork">SAFEs &amp; Docs</a>
+        <a href="#compliance">Compliance</a>
         <a href="#rules">Golden Rules</a>
       </nav>
     </div>
@@ -318,10 +319,63 @@
       </a>
     </section>
 
+    <!-- ================= COMPLIANCE ================= -->
+    <section class="section" id="compliance">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 06 · Stay legal</p>
+        <h2>Compliance: the rules around the raise</h2>
+        <p class="section-sub">Every check you cash is a sale of securities, and it's legal only because an exemption makes it legal. Exemptions come with conditions, and the conditions are where founders get hurt. Know which one your raise relies on before the first wire lands.</p>
+      </div>
+
+      <div class="matrix-panel reveal">
+        <h3 class="chart-title">The exemption map</h3>
+        <div class="matrix-scroll">
+          <table class="matrix">
+            <thead>
+              <tr><th scope="col">Exemption</th><th scope="col">Raise cap</th><th scope="col">Who can invest</th><th scope="col">Can you advertise?</th><th scope="col">Filings</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Rule 506(b)</td><td>No cap</td><td>Accredited investors, plus up to 35 sophisticated non-accredited</td><td><span class="tag-pill tag-debt">no public solicitation</span></td><td>Form D within 15 days</td></tr>
+              <tr><td>Rule 506(c)</td><td>No cap</td><td>Accredited only, with real verification, not a checkbox</td><td><span class="tag-pill tag-none">yes, freely</span></td><td>Form D within 15 days</td></tr>
+              <tr><td>Reg CF</td><td>$5M per 12 months</td><td>Anyone, through a registered funding portal</td><td><span class="tag-pill tag-equity">limited: testing the waters</span></td><td>Form C, then annual reports</td></tr>
+              <tr><td>Reg A+ (Tier 2)</td><td>$75M per 12 months</td><td>Anyone</td><td><span class="tag-pill tag-none">yes, once qualified</span></td><td>Form 1-A, ongoing reports</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="chart-foot">Most quiet SAFE rounds are 506(b) by default. The official rules live at the SEC's <a href="https://www.sec.gov/resources-small-businesses/exempt-offerings" target="_blank" rel="noopener">exempt offerings guide</a>; state "blue sky" notice filings usually follow the federal ones.</p>
+      </div>
+
+      <div class="spotlight-grid">
+        <article class="spot-card reveal">
+          <h3>The compliance basics</h3>
+          <ul class="tick-list">
+            <li><strong>Pick the exemption before the raise, not after.</strong> A quiet round is 506(b); the moment you want to talk publicly, you need 506(c) and accreditation verification.</li>
+            <li><strong>File Form D within 15 days</strong> of the first sale, directly with the SEC through EDGAR, then the state notices.</li>
+            <li><strong>Paper every investor.</strong> Accredited questionnaires collected before the wire, not chased afterward.</li>
+            <li><strong>Get a 409A valuation before granting options.</strong> Mispriced options are a tax problem for your employees, courtesy of you.</li>
+          </ul>
+        </article>
+        <article class="spot-card reveal">
+          <h3>The traps</h3>
+          <ul class="cross-list">
+            <li><strong>Tweeting the raise.</strong> A public "we're raising!" under 506(b) is general solicitation and can void the exemption for the whole round.</li>
+            <li><strong>Paying finders a cut.</strong> Success fees to unregistered intermediaries for raising money violate broker-dealer rules; deals have unwound over it.</li>
+            <li><strong>Casual non-accredited checks.</strong> Your aunt's $10k is the same securities law as a fund's $1M. Count and document every exception.</li>
+            <li><strong>Treating the exemption as cover.</strong> Anti-fraud liability applies to every claim in your deck regardless of exemption. Optimism is legal; misstatement is not.</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="callout reveal" style="margin-top:22px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+        <p><strong>Exemptions excuse registration, not dishonesty.</strong> Rule 10b-5 anti-fraud liability follows every number and claim you put in front of an investor. When in doubt about which exemption fits or what you can say publicly, that's the moment for an hour of securities counsel, and it's the cheapest hour you'll buy all year.</p>
+      </div>
+    </section>
+
     <!-- ================= GOLDEN RULES ================= -->
     <section class="section" id="rules">
       <div class="section-head reveal">
-        <p class="eyebrow">No. 06 · Before you sign anything</p>
+        <p class="eyebrow">No. 07 · Before you sign anything</p>
         <h2>Five golden rules of raising</h2>
       </div>
       <ol class="rules-list">
@@ -373,7 +427,7 @@
     </div>
   </div>
 
-  <script src="script.js?v=6"></script>
-  <script src="site.js?v=6"></script>
+  <script src="script.js?v=7"></script>
+  <script src="site.js?v=7"></script>
 </body>
 </html>

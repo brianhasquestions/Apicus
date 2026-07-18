@@ -857,6 +857,8 @@ body.modal-open { overflow: hidden; }
   .stat { border-left: none; padding-left: 0; }
   .check-grid { grid-template-columns: 1fr; }
   .alloc-row { grid-template-columns: 120px 1fr; }
+  .board-stage { grid-template-columns: 1fr; }
+  .board-note { grid-column: 1; }
 }
 
 /* ---------- reduced motion ---------- */

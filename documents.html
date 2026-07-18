@@ -6,7 +6,7 @@
   <title>Apicus · The Document Library</title>
   <meta name="description" content="Every legal document a startup raise will ask of you: formation stack, SAFEs and convertible notes, the NVCA priced-round suite, compliance filings, and the paperwork for all 10 funding paths.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 
@@ -111,7 +111,7 @@
         </div>
         <div class="doc-extra">
           <h4>83(b) Election</h4>
-          <p>A one-page filing mailed straight to the IRS, postmarked within <strong>30 days</strong> of a restricted stock purchase. Miss it and vesting becomes a recurring tax bill. The IRS publishes a standardized election, <a href="https://www.irs.gov/pub/irs-pdf/f15620.pdf" target="_blank" rel="noopener">Form 15620 ↗</a>; send it certified mail and keep the receipt.</p>
+          <p>A one-page filing mailed straight to the IRS, postmarked within <strong>30 days</strong> of a restricted stock purchase. Miss it and vesting becomes a recurring tax bill. The IRS publishes a standardized election, <a href="https://www.irs.gov/pub/irs-pdf/f15620.pdf" target="_blank" rel="noopener">Form 15620 ↗</a>; file it online through an IRS Online Account or send it certified mail and keep the receipt.</p>
         </div>
         <div class="doc-extra">
           <h4>Invention Assignment (CIIA / PIIA)</h4>
@@ -119,7 +119,7 @@
         </div>
         <div class="doc-extra">
           <h4>Equity Incentive Plan</h4>
-          <p>The option pool and its rulebook, adopted by the board. Needed before your first employee grant; sized and re-sized at every priced round.</p>
+          <p>The option pool and its rulebook, adopted by the board. Needed before your first employee grant; sized and re-sized at every priced round. Before that first grant, get a 409A valuation: the independent appraisal that sets the option strike price, refreshed every 12 months or at material events. Employee options are usually ISOs, advisor and contractor options NSOs; the tax treatment differs.</p>
         </div>
       </div>
     </section>
@@ -139,10 +139,10 @@
               <tr><th scope="col">Instrument</th><th scope="col">Interest</th><th scope="col">Maturity date</th><th scope="col">Key terms</th><th scope="col">Reach for it when</th></tr>
             </thead>
             <tbody>
-              <tr><td>Post-money SAFE</td><td><span class="tag-pill tag-none">none</span></td><td><span class="tag-pill tag-none">none</span></td><td>Cap, discount, or MFN</td><td>Default choice: fastest, cheapest, best understood</td></tr>
+              <tr><td>Post-money SAFE</td><td><span class="tag-pill tag-none">none</span></td><td><span class="tag-pill tag-none">none</span></td><td>Cap, discount, or MFN (most favored nation: the holder inherits any better later terms)</td><td>Default choice: fastest, cheapest, best understood</td></tr>
               <tr><td>Pre-money SAFE (legacy)</td><td><span class="tag-pill tag-none">none</span></td><td><span class="tag-pill tag-none">none</span></td><td>Pre-money cap: ownership unknowable until the round prices</td><td>You don't. It's the retired 2013 original; know it only to read older cap tables</td></tr>
               <tr><td>Convertible note</td><td>2&ndash;8%</td><td>12&ndash;24 months</td><td>Cap + discount, repayable at maturity</td><td>The investor wants debt protections or a forcing date</td></tr>
-              <tr><td>KISS (debt / equity)</td><td>~5% / none</td><td>18 months / none</td><td>Cap or discount, MFN, info rights</td><td>An investor insists on 500 Global's forms</td></tr>
+              <tr><td>KISS (debt / equity)</td><td>~5% / none</td><td>18 months / none</td><td>Cap + discount, MFN, major-investor rights; auto-converts at a $1M+ qualified round</td><td>An investor insists on 500 Global's forms</td></tr>
               <tr><td>Promissory note</td><td>Market rate</td><td>Fixed</td><td>No conversion: it's just a loan</td><td>Family money that should stay a loan, not equity</td></tr>
             </tbody>
           </table>
@@ -157,7 +157,7 @@
         </div>
         <div class="doc-extra">
           <h4>Convertible note (Series Seed)</h4>
-          <p>The open-source Series Seed repository includes a standard convertible note package with term sheet, released into the public domain on <a href="https://github.com/CooleyLLP/seriesseed" target="_blank" rel="noopener">GitHub ↗</a>.</p>
+          <p>The open-source Series Seed project (created by attorney Ted Wang in 2010) includes a standard convertible note package with term sheet, released into the public domain on <a href="https://github.com/CooleyLLP/seriesseed" target="_blank" rel="noopener">GitHub ↗</a>.</p>
         </div>
         <div class="doc-extra">
           <h4>KISS documents (500 Global)</h4>
@@ -177,15 +177,15 @@
       <ol class="rules-list">
         <li class="reveal"><span class="rule-num">01</span><div><h3>Term Sheet</h3><p>The non-binding summary of the whole deal: valuation, preferences, board, option pool. Negotiate hard here; everything after is drafting. YC publishes an annotated founder-friendly version at <a href="https://www.ycombinator.com/series_a_term_sheet" target="_blank" rel="noopener">ycombinator.com ↗</a>.</p></div></li>
         <li class="reveal"><span class="rule-num">02</span><div><h3>Stock Purchase Agreement (SPA)</h3><p>The actual sale: who buys how many shares at what price, plus your representations and warranties about the company. The disclosure schedule attached to it is where you list every exception, honestly.</p></div></li>
-        <li class="reveal"><span class="rule-num">03</span><div><h3>Amended &amp; Restated Certificate of Incorporation</h3><p>The charter, refiled to create the new preferred stock: its liquidation preference, conversion rights, anti-dilution protection, and protective provisions. This is where preference multiples hide.</p></div></li>
+        <li class="reveal"><span class="rule-num">03</span><div><h3>Amended &amp; Restated Certificate of Incorporation</h3><p>The charter, refiled to create the new preferred stock: its liquidation preference, conversion rights, anti-dilution protection, and protective provisions. This is where preference multiples hide. Anti-dilution itself comes in two flavors: broad-based weighted average (standard, mild) and full ratchet (a down round reprices every preferred share to the new price; fight it).</p></div></li>
         <li class="reveal"><span class="rule-num">04</span><div><h3>Investors' Rights Agreement (IRA)</h3><p>Information rights, registration rights, and pro rata rights for the new investors. The reporting obligations you agree to here are the ones you'll live with every quarter.</p></div></li>
-        <li class="reveal"><span class="rule-num">05</span><div><h3>Voting Agreement</h3><p>Board composition and how shareholders must vote on it, plus drag-along rights that let a majority force a sale through. Board control is decided here, not in the term sheet.</p></div></li>
+        <li class="reveal"><span class="rule-num">05</span><div><h3>Voting Agreement</h3><p>Board composition and how shareholders must vote on it, plus drag-along rights that let a defined majority (typically preferred plus the board plus a common majority) force a sale through. Board control is decided here, not in the term sheet.</p></div></li>
         <li class="reveal"><span class="rule-num">06</span><div><h3>Right of First Refusal &amp; Co-Sale Agreement</h3><p>Controls what happens when a founder wants to sell shares: the company and investors get first claim and investors can sell alongside. Standard, but read the transfer restrictions.</p></div></li>
       </ol>
 
       <div class="callout reveal" style="margin-top:22px">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
-        <p><strong>Raising a smaller priced round?</strong> The open-source Series Seed documents compress the NVCA stack into a lighter set built for seed-sized equity rounds. The full set lives on <a href="https://github.com/CooleyLLP/seriesseed" target="_blank" rel="noopener">GitHub under a public-domain license</a>.</p>
+        <p><strong>Raising a smaller priced round?</strong> Ted Wang's open-source Series Seed documents compress the NVCA stack into a lighter set built for seed-sized equity rounds. The full set lives on <a href="https://github.com/CooleyLLP/seriesseed" target="_blank" rel="noopener">GitHub under a public-domain license</a>.</p>
       </div>
     </section>
 
@@ -204,15 +204,19 @@
         </div>
         <div class="doc-extra">
           <h4>SEC Form D</h4>
-          <p>The federal notice for a Reg D exempt raise, due within <strong>15 days of the first sale</strong>. You file it yourself, directly with the SEC through EDGAR, free: the SEC's own <a href="https://www.sec.gov/resources-small-businesses/exempt-offerings/filing-form-d-notice" target="_blank" rel="noopener">filing guide ↗</a> walks through it. State "blue sky" notices often follow.</p>
+          <p>The federal notice for a Reg D exempt raise, due within <strong>15 days of the first sale</strong>. You file it yourself, directly with the SEC through EDGAR, free: the SEC's own <a href="https://www.sec.gov/resources-small-businesses/exempt-offerings/filing-form-d-notice" target="_blank" rel="noopener">filing guide ↗</a> walks through it. State "blue sky" notices often follow, filed per investor state with their own small fees and deadlines.</p>
         </div>
         <div class="doc-extra">
           <h4>Accredited investor questionnaire</h4>
-          <p>A short form each investor completes so you can rely on the Reg D exemption. Collect it before the wire, not after.</p>
+          <p>A short form each investor completes so you can rely on the Reg D exemption. Collect it before the wire, not after. Accredited generally means $200k income ($300k joint) in each of the last two years, or $1M net worth excluding the primary residence.</p>
         </div>
         <div class="doc-extra">
           <h4>Side letters</h4>
           <p>Per-investor extras: pro rata rights, information rights, MFN clauses. Each one is a small promise that compounds across rounds, so keep a register of every letter you've signed.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Indemnification agreements &amp; the management rights letter</h4>
+          <p>Each director signs an indemnification agreement (the company's personal promise to cover them; D&amp;O insurance is the policy that funds it) and ERISA-regulated funds will ask for a management rights letter. Model versions ship with the NVCA set.</p>
         </div>
         <div class="doc-extra">
           <h4>Cap table</h4>
@@ -240,7 +244,7 @@
         </div>
         <div class="doc-extra">
           <h4>Advisor agreement (FAST)</h4>
-          <p>The Founder Institute's standard advisor template: 0.1&ndash;0.5% equity, vesting, defined expectations. Free at <a href="https://fi.co/fast" target="_blank" rel="noopener">fi.co/fast ↗</a>. Never grant advisor equity on a handshake.</p>
+          <p>The Founder Institute's standard advisor template: 0.15&ndash;1.0% equity by stage and level, vesting, defined expectations. Free at <a href="https://fi.co/fast" target="_blank" rel="noopener">fi.co/fast ↗</a>. Never grant advisor equity on a handshake.</p>
         </div>
         <div class="doc-extra">
           <h4>Contractor agreement with IP assignment</h4>
@@ -276,7 +280,7 @@
               <tr><td>Accelerators</td><td>Program agreement + the program's SAFEs (YC: $125k SAFE + $375k MFN SAFE)</td><td>Read the follow-on and pro rata terms before demo day, not after</td></tr>
               <tr><td>Crowdfunding</td><td>SEC Form C, platform agreement, Crowd SAFE or SPV docs</td><td>Form C means public financials and annual reports; budget for compliance</td></tr>
               <tr><td>Grants</td><td>Application (federal: SF-424 family), award agreement, progress reports</td><td>The award agreement scopes what the money may fund; pivots need approval</td></tr>
-              <tr><td>Loans &amp; Venture Debt</td><td>Loan agreement, promissory note, security agreement, personal guarantee, warrant</td><td>Covenants and the amortization start date matter more than the rate</td></tr>
+              <tr><td>Loans &amp; Venture Debt</td><td>Loan agreement, promissory note, security agreement, personal guarantee, warrant</td><td>Covenants (minimum-cash floors, MAC clauses) and the amortization start date matter more than the rate; the warrant is a small equity kicker sized off the loan</td></tr>
               <tr><td>Revenue-Based Financing</td><td>Revenue purchase agreement, ACH authorization</td><td>Compute the effective APR yourself before signing; the fee is not the rate</td></tr>
             </tbody>
           </table>
@@ -313,6 +317,6 @@
     <p class="footer-fine">Named for Marcus Gavius Apicius, whose <em>De re coquinaria</em> is the oldest surviving cookbook. Consider this a cookbook of capital: recipes, ingredients, and how each one can burn.</p>
     </footer>
 
-  <script src="site.js?v=8"></script>
+  <script src="site.js?v=9"></script>
 </body>
 </html>

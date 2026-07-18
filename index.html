@@ -6,7 +6,7 @@
   <title>Apicus · Every Way to Fund a Startup</title>
   <meta name="description" content="Apicus is a field guide to the 10 ways founders fund startups, from bootstrapping to strategic corporate capital, with SAFE documents, pitfalls, and real contacts for each.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 
@@ -138,7 +138,7 @@
           <ul class="tick-list">
             <li>A CVC check often comes <strong>with a commercial deal attached</strong>: a pilot, a co-sell agreement, or marketplace placement worth more than the money.</li>
             <li>Corporate validation <strong>collapses enterprise sales cycles</strong>. "Backed by Salesforce Ventures" opens doors cold email never will.</li>
-            <li>Many corporates run <strong>partner programs that pay you</strong> (cloud credits, co-marketing budgets, NRE fees) with zero equity taken.</li>
+            <li>Many corporates run <strong>partner programs that pay you</strong> (cloud credits, co-marketing budgets, paid non-recurring engineering) with zero equity taken.</li>
           </ul>
         </article>
         <article class="spot-card reveal">
@@ -165,10 +165,10 @@
         <p class="section-sub">Typical ownership given up in a single raise from each source. Bars are representative midpoints; real terms vary with stage, leverage, and negotiation.</p>
       </div>
 
-      <div class="chart-panel reveal" role="img" aria-label="Bar chart of typical equity dilution by funding source, from 0% for bootstrapping, grants, loans and revenue-based financing up to 20% for venture capital">
+      <div class="chart-panel reveal" role="img" aria-label="Bar chart of typical equity dilution by funding source: 0% for bootstrapping, grants and revenue-based financing, about 1% for venture debt, up to 20% for venture capital">
         <h3 class="chart-title">Typical equity given up per raise</h3>
         <div class="bar-chart" id="dilutionChart"><!-- injected --></div>
-        <p class="chart-foot">Post-money basis. Venture debt shown with warrant coverage of roughly 1%. Crowdfunding shown for equity campaigns; rewards campaigns cost 0%.</p>
+        <p class="chart-foot">Post-money basis: each bar is the share of the company after that raise. Venture debt shown as warrants worth roughly 1% of the company. Crowdfunding shown for equity campaigns; rewards campaigns cost 0%.</p>
       </div>
 
       <div class="matrix-panel reveal">
@@ -181,6 +181,7 @@
             <tbody><!-- injected --></tbody>
           </table>
         </div>
+        <p class="chart-foot">Speed to cash: five dots means money lands in days; one dot means many months.</p>
       </div>
     </section>
 
@@ -194,7 +195,7 @@
 
       <div class="callout reveal" style="margin-bottom:22px">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7h6"/><path d="M9 11h6"/><path d="M12 17h.01"/><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
-        <p><strong>The fund math, in one line:</strong> fund size &divide; ownership at exit = the exit that returns the fund once. A $100M fund holding 10% at exit needs a <strong>$1B exit</strong> from a single winner just to break even on the whole fund, so they want each bet to be capable of that alone. Before pitching a fund, run this math on their fund size; it tells you what market story they need to believe.</p>
+        <p><strong>The fund math, in one line:</strong> fund size &divide; ownership at exit = the exit that returns the fund once. A $100M fund holding 10% at exit needs a <strong>$1B exit</strong> from a single winner just to return the fund once, before fees, so they want each bet to be capable of that alone. Before pitching a fund, run this math on their fund size; it tells you what market story they need to believe.</p>
       </div>
 
       <div class="matrix-panel reveal">
@@ -290,7 +291,7 @@
       <div class="doc-extras reveal">
         <div class="doc-extra">
           <h4>+ Pro Rata Side Letter</h4>
-          <p>Optional add-on giving a SAFE investor the right to buy into your next priced round to maintain their ownership percentage.</p>
+          <p>Optional add-on giving a SAFE investor the right to buy into your next priced round to maintain their ownership percentage. Pro rata is the most common side letter, not the only one: information rights, major-investor status, and MFN letters circulate too. Keep a register of every letter you sign.</p>
         </div>
         <div class="doc-extra">
           <h4>+ Safe User Guide</h4>
@@ -299,6 +300,18 @@
         <div class="doc-extra">
           <h4>Priced round? Use NVCA model docs</h4>
           <p>When you graduate to a priced equity round, the National Venture Capital Association publishes the industry-standard term sheet, stock purchase agreement, and charter, free at <a href="https://nvca.org/model-legal-documents/" target="_blank" rel="noopener">nvca.org ↗</a>.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>The unofficial fourth variant</h4>
+          <p>Investors routinely mark up the cap SAFE to add a discount as well; at conversion they take whichever term yields more shares. It isn't one of YC's three official forms, but you will see it. Model both branches before signing.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>What a SAFE does before it converts</h4>
+          <p>No maturity date, no interest, no repayment clock. If the company is acquired first, the holder gets the greater of their money back or what conversion would have yielded; in a wind-down they stand ahead of common stock. Otherwise the SAFE simply waits for the priced round.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>QSBS: the quiet reason for the C-corp</h4>
+          <p>Qualified Small Business Stock (Section 1202) can exclude $10M+ of capital gains per shareholder on C-corp stock held five years (the 2025 tax law lifted the cap to $15M with a tiered 3-to-5-year schedule for new issuances). SAFEs generally don't start the clock until they convert into stock. Raise it with a tax advisor at formation, not at exit.</p>
         </div>
         <div class="doc-extra">
           <h4>What about a pre-money SAFE?</h4>
@@ -338,13 +351,13 @@
             </thead>
             <tbody>
               <tr><td>Rule 506(b)</td><td>No cap</td><td>Accredited investors, plus up to 35 sophisticated non-accredited</td><td><span class="tag-pill tag-debt">no public solicitation</span></td><td>Form D within 15 days</td></tr>
-              <tr><td>Rule 506(c)</td><td>No cap</td><td>Accredited only, with real verification, not a checkbox</td><td><span class="tag-pill tag-none">yes, freely</span></td><td>Form D within 15 days</td></tr>
-              <tr><td>Reg CF</td><td>$5M per 12 months</td><td>Anyone, through a registered funding portal</td><td><span class="tag-pill tag-equity">limited: testing the waters</span></td><td>Form C, then annual reports</td></tr>
-              <tr><td>Reg A+ (Tier 2)</td><td>$75M per 12 months</td><td>Anyone</td><td><span class="tag-pill tag-none">yes, once qualified</span></td><td>Form 1-A, ongoing reports</td></tr>
+              <tr><td>Rule 506(c)</td><td>No cap</td><td>Accredited only, verified: tax documents, a CPA letter, or (per 2025 SEC guidance) a high minimum investment with written representations</td><td><span class="tag-pill tag-none">yes, freely</span></td><td>Form D within 15 days</td></tr>
+              <tr><td>Reg CF</td><td>$5M per 12 months</td><td>Anyone through a registered funding portal, subject to per-investor limits</td><td><span class="tag-pill tag-equity">limited: testing the waters, then tombstone ads</span></td><td>Form C, then annual reports</td></tr>
+              <tr><td>Reg A+ (Tier 2)</td><td>$75M per 12 months</td><td>Anyone, with investment limits for non-accredited buyers</td><td><span class="tag-pill tag-none">yes, once qualified</span></td><td>Form 1-A, ongoing reports</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="chart-foot">Most quiet SAFE rounds are 506(b) by default. The official rules live at the SEC's <a href="https://www.sec.gov/resources-small-businesses/exempt-offerings" target="_blank" rel="noopener">exempt offerings guide</a>; state "blue sky" notice filings usually follow the federal ones.</p>
+        <p class="chart-foot">Most quiet SAFE rounds are 506(b) by default. The official rules live at the SEC's <a href="https://www.sec.gov/resources-small-businesses/exempt-offerings" target="_blank" rel="noopener">exempt offerings guide</a>; state "blue sky" notice filings usually follow the federal ones. The tiniest friends-and-family rounds often rest informally on the statutory Section 4(a)(2) private-offering exemption; Reg D is its safe-harbor version, which is why lawyers steer you onto it.</p>
       </div>
 
       <div class="spotlight-grid">
@@ -352,7 +365,7 @@
           <h3>The compliance basics</h3>
           <ul class="tick-list">
             <li><strong>Pick the exemption before the raise, not after.</strong> A quiet round is 506(b); the moment you want to talk publicly, you need 506(c) and accreditation verification.</li>
-            <li><strong>File Form D within 15 days</strong> of the first sale, directly with the SEC through EDGAR, then the state notices.</li>
+            <li><strong>File Form D within 15 days</strong> of the first sale: a short public notice, free, no SEC review, filed through EDGAR, then the state notices.</li>
             <li><strong>Paper every investor.</strong> Accredited questionnaires collected before the wire, not chased afterward.</li>
             <li><strong>Get a 409A valuation before granting options.</strong> Mispriced options are a tax problem for your employees, courtesy of you.</li>
           </ul>
@@ -366,6 +379,21 @@
             <li><strong>Treating the exemption as cover.</strong> Anti-fraud liability applies to every claim in your deck regardless of exemption. Optimism is legal; misstatement is not.</li>
           </ul>
         </article>
+      </div>
+
+      <div class="doc-extras reveal" style="margin-top:22px">
+        <div class="doc-extra">
+          <h4>Who counts as accredited</h4>
+          <p>Individuals with $200k income ($300k with a spouse) in each of the last two years, or $1M net worth excluding the primary residence, plus holders of certain securities licenses. "Sophisticated" (the 506(b) non-accredited allowance) means capable of evaluating the risk; document why you believed it.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Options need their own exemption</h4>
+          <p>Employee and advisor option grants rely on Rule 701, not Reg D; it has its own dollar caps and disclosure thresholds. And before granting anything, get a 409A valuation: the independent appraisal that sets a defensible strike price.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Bad-actor disqualification</h4>
+          <p>Rule 506(d): if a covered person (founders, major shareholders, certain promoters) has a disqualifying securities event, the exemption is void for the entire raise. Run the check before you take money with them attached.</p>
+        </div>
       </div>
 
       <div class="callout reveal" style="margin-top:22px">
@@ -382,9 +410,9 @@
       </div>
       <ol class="rules-list">
         <li class="reveal"><span class="rule-num">01</span><div><h3>Paper every dollar, even Mom's.</h3><p>A handshake with family is still a securities transaction. Use a SAFE or promissory note for every check, no matter who writes it.</p></div></li>
-        <li class="reveal"><span class="rule-num">02</span><div><h3>Dilution compounds. Model it.</h3><p>7% to an accelerator plus 20% at seed plus 20% at Series A leaves founders under 50% before Series B. Run the math on every stack of SAFEs before signing the next one.</p></div></li>
+        <li class="reveal"><span class="rule-num">02</span><div><h3>Dilution compounds. Model it.</h3><p>7% to an accelerator plus 20% at seed plus 20% at Series A leaves founders around 60%; the option-pool top-ups investors require (created pre-money, so out of your side of the table) push it under 50%. Run the math on every stack of SAFEs before signing the next one.</p></div></li>
         <li class="reveal"><span class="rule-num">03</span><div><h3>The cheapest money is revenue.</h3><p>Exhaust non-dilutive options first: customers, grants, partner programs. Equity sold at your weakest moment is the most expensive capital you'll ever take.</p></div></li>
-        <li class="reveal"><span class="rule-num">04</span><div><h3>Terms beat valuation.</h3><p>A clean $8M cap beats a $12M cap with a 2&times; liquidation preference, board control, or a ROFR. Ugly terms follow you into every future round.</p></div></li>
+        <li class="reveal"><span class="rule-num">04</span><div><h3>Terms beat valuation.</h3><p>A clean $8M round beats a $12M round carrying a 2&times; liquidation preference, board control, or a ROFR. Ugly terms follow you into every future round.</p></div></li>
         <li class="reveal"><span class="rule-num">05</span><div><h3>Pick investors like co-founders.</h3><p>You can fire an employee. You can't fire your cap table. Reference-check every investor with founders they've backed, especially the failed ones.</p></div></li>
       </ol>
 
@@ -429,7 +457,7 @@
     </div>
   </div>
 
-  <script src="script.js?v=8"></script>
-  <script src="site.js?v=8"></script>
+  <script src="script.js?v=9"></script>
+  <script src="site.js?v=9"></script>
 </body>
 </html>

@@ -602,7 +602,7 @@ a { color: var(--navy); }
   font-family: var(--mono); font-size: 0.72rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.06em;
   background: none; border: none; color: var(--ink-3);
-  padding: 10px 14px 12px; cursor: pointer;
+  padding: 13px 14px 14px; cursor: pointer;
   border-bottom: 3px solid transparent;
   margin-bottom: -2px;
   transition: color 0.2s, border-color 0.2s;

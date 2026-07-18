@@ -33,7 +33,7 @@ const SOURCES = [
     repay: "none",
     blurb: "Fund the company with savings, consulting income, and, best of all, paying customers. You keep 100% and answer to no one.",
     overview: [
-      "Bootstrapping means growing on your own resources: personal savings, keeping a day job or consulting on the side, and reinvesting every dollar of revenue. Pre-selling (charging customers before the product fully exists via pilots, annual prepay, or LOI-backed deposits) is the most underrated financing tool in existence.",
+      "Bootstrapping means growing on your own resources: personal savings, keeping a day job or consulting on the side, and reinvesting every dollar of revenue. Pre-selling (charging customers before the product fully exists via pilots, annual prepay, or deposits backed by letters of intent) is the most underrated financing tool in existence.",
       "It forces the single best habit a startup can have: building something people pay for, immediately. Companies like Mailchimp, Basecamp, and Zoho reached hundreds of millions in revenue without outside capital.",
       "<strong>Best fit:</strong> software and services with short paths to revenue, niche B2B products, and founders who value control and optionality over blitzscaling."
     ],
@@ -45,7 +45,7 @@ const SOURCES = [
     ],
     docs: [
       { n: "Founder equity: post-incorporation checklist (YC)", u: "https://www.ycombinator.com/library", d: "Even with no investors, incorporate properly, file 83(b) elections, and vest founder stock. Future you will thank you." },
-      { n: "Incorporate directly with the state", u: "https://corp.delaware.gov", d: "Delaware filings are forms you submit yourself. The 83(b) election is a letter to the IRS. None of this requires a paid service." }
+      { n: "Incorporate directly with the state", u: "https://corp.delaware.gov", d: "Delaware filings are forms you submit yourself, plus a required registered agent with a Delaware address (a small annual fee) and an annual franchise tax report; use the assumed-par-value method before panicking at the default bill. The 83(b) election is IRS Form 15620, due within 30 days of the stock purchase, filed online or by certified mail." }
     ],
     contacts: [
       { n: "Indie Hackers", u: "https://www.indiehackers.com", d: "Community of bootstrapped founders sharing revenue numbers and playbooks." },
@@ -66,7 +66,7 @@ const SOURCES = [
     repay: "equity or note",
     blurb: "Fast, trust-based capital from people who bet on you, not your metrics. Also the easiest money to mishandle.",
     overview: [
-      "Friends and family rounds fund more startups than all VCs combined. The money closes in days, terms are founder-friendly, and the diligence bar is 'we believe in you.'",
+      "By most estimates, friends and family rounds fund more startups than all VCs combined. The money closes in days, terms are founder-friendly, and the diligence bar is 'we believe in you.'",
       "That trust is exactly why you must treat it more formally, not less. Use a real instrument (a post-money SAFE with a sensible cap, or a promissory note) and put the risk in writing: this money may vanish and it probably won't come back for 7 to 10 years if it comes back at all.",
       "<strong>Golden rule:</strong> only take money someone can afford to lose completely and never let anyone invest their emergency fund or retirement savings."
     ],
@@ -93,21 +93,21 @@ const SOURCES = [
     tag: "Experienced operators writing personal checks",
     color: "var(--navy)",
     icon: "wing",
-    check: "$25k – $500k",
+    check: "$10k – $500k",
     stage: "Pre-seed → Seed",
     dilution: 15,
     speed: 3,
     repay: "equity (SAFE)",
     blurb: "Wealthy individuals, often exited founders, investing their own money. The best ones bring their network and scar tissue with the check.",
     overview: [
-      "Angels invest personal capital at the riskiest stage, usually via SAFEs, in checks from $5k to $500k. The best angels are former operators in your exact space: their intro list and pattern-matching are worth more than the money.",
-      "Syndicates (AngelList SPVs, rolling funds) let one lead angel pool dozens of backers into a single entity. You get $200k+ of capital but only <em>one line on your cap table</em>. Angel groups (organized clubs that meet to hear pitches) move slower but write larger collective checks.",
+      "Angels invest personal capital at the riskiest stage, usually via SAFEs, in checks from $10k to $500k. The best angels are former operators in your exact space: their intro list and pattern-matching are worth more than the money.",
+      "Syndicates (AngelList special purpose vehicles, rolling funds) let one lead angel pool dozens of backers into a single entity. You get $200k+ of capital but only <em>one line on your cap table</em>. Angel groups (organized clubs that meet to hear pitches) move slower but write larger collective checks.",
       "<strong>How it works:</strong> warm intros still dominate, but platforms like AngelList and open application forms have made cold access realistic. Expect 2 to 6 weeks from first meeting to money."
     ],
     pitfalls: [
       { t: "Party-round cap table chaos", d: "Thirty direct $10k checks means thirty signatures for every future consent. Pool small checks through an SPV or syndicate." },
       { t: "Amateur angels", d: "First-time angels can panic in downturns, demand updates weekly, or block clean exits. Reference-check angels like they diligence you." },
-      { t: "Advisor-equity grabs", d: "'I'll invest AND advise for 2% extra' is usually a bad trade. Standard advisor grants are 0.1% to 0.5% with vesting; use FAST agreement terms." },
+      { t: "Advisor-equity grabs", d: "'I'll invest AND advise for 2% extra' is usually a bad trade. Standard advisor grants run 0.15% to 1% by stage with vesting; use FAST agreement terms." },
       { t: "Signaling traps", d: "A famous angel who doesn't follow on in your seed can spook other investors. Diversify your angel base." },
       { t: "Slow drips", d: "Raising $25k at a time for eight months is a full-time job that kills the company you're supposed to be building. Set a closing date and enforce it." }
     ],
@@ -117,7 +117,7 @@ const SOURCES = [
       { n: "FAST Agreement (Founder Institute)", u: "https://fi.co/fast", d: "Standard advisor equity agreement that keeps 'advice for equity' deals sane." }
     ],
     contacts: [
-      { n: "AngelList", u: "https://www.angellist.com", d: "Syndicates, rolling funds, and RUVs: the infrastructure layer of angel investing." },
+      { n: "AngelList", u: "https://www.angellist.com", d: "Syndicates, rolling funds, and RUVs (roll-up vehicles that land a whole party round as one cap-table line): the infrastructure layer of angel investing." },
       { n: "Hustle Fund Angel Squad", u: "https://www.hustlefund.vc", d: "Large trained-angel community that co-invests with the fund." },
       { n: "Tech Coast Angels / Golden Seeds / regional groups", u: "https://www.techcoastangels.com", d: "Organized angel groups exist in every major metro. Search '[your city] angel group'." },
       { n: "OpenVC", u: "https://www.openvc.app", d: "Free, filterable list of thousands of investors with stated theses and open contact paths." }
@@ -137,17 +137,17 @@ const SOURCES = [
     blurb: "Professional funds investing other people's money for 10x+ returns. The most capital available anywhere and the most expectations attached.",
     overview: [
       "VCs raise funds from institutions (pensions, endowments, family offices) and must return multiples of that money in about 10 years. That math shapes everything: they need each investment to plausibly return the entire fund, so they exclusively back companies aiming for massive outcomes.",
-      "Seed rounds today are typically $1M to $4M on SAFEs; Series A ($8M to $20M) and beyond are priced equity rounds with board seats, protective provisions, and NVCA-style documents.",
+      "Seed rounds today are typically $1M to $4M on SAFEs; Series A ($8M to $20M) and beyond are priced equity rounds with board seats, protective provisions (shareholder veto rights), and NVCA-style documents.",
       "<strong>Take VC only if</strong> your market is genuinely huge, speed is a competitive weapon, and you're comfortable committing to a sell-or-IPO endgame. VC is a one-way door: once institutional money is in, a comfortable $5M-a-year lifestyle business is no longer an acceptable outcome to your board.",
       "<strong>How big is huge?</strong> It depends entirely on who you pitch: a fund's size sets the exit it needs and the exit sets the market. <a href=\"#market\">The market math section</a> maps the ranges by investor type, from micro-VCs to national security funds."
     ],
     pitfalls: [
-      { t: "Liquidation preference stacks", d: "Anything beyond a 1x non-participating preference means investors get paid multiples before you see a dollar. In a modest exit, founders with 30% ownership can walk away with nothing." },
+      { t: "Liquidation preference stacks", d: "Anything beyond a 1x non-participating preference means investors double-dip (participating preferred) or take multiples (2x to 3x) before you see a dollar. In a modest exit, founders with 30% ownership can walk away with nothing." },
       { t: "Dilution + control compounding", d: "20% per round plus option-pool top-ups (usually taken from your side, pre-money) leaves founders as minority owners by Series B. Model every term sheet's post-round cap table." },
       { t: "The growth treadmill", d: "Accepting a $50M valuation means promising a $500M+ exit. Miss growth targets and the next round is a down round with wash-out terms." },
       { t: "Signaling risk", d: "A tier-1 fund's small seed check that doesn't follow on at Series A is a red flag every other investor sees." },
       { t: "Board control drift", d: "Two preferred seats plus one 'independent' the investors pick means founders can be fired from their own company. Negotiate board composition as hard as valuation." },
-      { t: "Zombie terms", d: "Full-ratchet anti-dilution, multi-x preferences, and redemption rights show up in desperate markets. A clean deal at a lower price beats a dirty deal at a higher one." }
+      { t: "Zombie terms", d: "Full-ratchet anti-dilution (a down round reprices every earlier preferred share to the new low), multi-x preferences, and redemption rights (investors can demand their money back) show up in desperate markets. A clean deal at a lower price beats a dirty deal at a higher one." }
     ],
     docs: [
       { n: "NVCA Model Legal Documents", u: "https://nvca.org/model-legal-documents/", d: "The industry-standard priced-round docs: term sheet, SPA, charter, IRA, ROFR." },
@@ -175,7 +175,7 @@ const SOURCES = [
     repay: "equity or none",
     blurb: "Corporate venture arms and partnership programs invest for strategic value, not just returns. They bring distribution, pilots, and credibility no VC can.",
     overview: [
-      "Large corporations deploy tens of billions per year into startups through two channels. <strong>Corporate venture capital (CVC)</strong>, arms like GV, Salesforce Ventures, M12, Intel Capital, and Qualcomm Ventures, writes equity checks like a VC but with a strategic mandate. <strong>Partnership programs</strong> (accelerators, ISV and marketplace programs, co-development deals) often deliver cash, cloud credits, and revenue with <em>zero equity taken</em>.",
+      "Large corporations deploy tens of billions per year into startups through two channels. <strong>Corporate venture capital (CVC)</strong>, arms like Salesforce Ventures, M12, Intel Capital, and Qualcomm Ventures, writes equity checks like a VC but with a strategic mandate. <strong>Partnership programs</strong> (accelerators, independent software vendor and marketplace programs, co-development deals) often deliver cash, cloud credits, and revenue with <em>zero equity taken</em>.",
       "The real prize is rarely the check. A CVC investment frequently arrives bundled with a paid pilot, a co-selling agreement, or marketplace distribution: assets that would take years to earn cold. 'Backed by [corporate]' also collapses enterprise-sales trust barriers overnight.",
       "<strong>How to work it:</strong> map corporations adjacent to your product (their customers, their gaps, their announced strategy). Approach the CVC arm and the partnership org in parallel; they're different doors into the same building. Come with a specific integration or pilot proposal, not a generic deck.",
       "<strong>Fit:</strong> B2B products that extend a platform (Salesforce, Microsoft, AWS ecosystems), deep tech corporates can't build fast enough, and industries where credibility is the moat (health, fintech, industrial)."
@@ -194,12 +194,12 @@ const SOURCES = [
       { n: "Global Corporate Venturing", u: "https://globalventuring.com", d: "News and data on which corporates are actively investing, in what, right now." }
     ],
     contacts: [
-      { n: "GV (Alphabet)", u: "https://www.gv.com", d: "Alphabet's venture arm: broad mandate, operates like a top-tier VC." },
+      { n: "GV (Alphabet)", u: "https://www.gv.com", d: "Alphabet's venture arm: financially driven and independent of Alphabet strategy, the exception among the CVCs listed here." },
       { n: "Salesforce Ventures", u: "https://salesforceventures.com", d: "The template for platform CVC. Invests in companies that extend the Salesforce ecosystem." },
       { n: "M12 (Microsoft)", u: "https://m12.vc", d: "Microsoft's fund: B2B software, AI, and infrastructure. Brings Azure and enterprise co-sell." },
       { n: "Intel Capital", u: "https://www.intelcapital.com", d: "One of the oldest CVCs: semiconductors, AI, and deep tech." },
       { n: "Qualcomm Ventures", u: "https://www.qualcommventures.com", d: "Wireless, IoT, XR, and automotive." },
-      { n: "Corporate accelerator & partner programs", u: "", d: "AWS Activate, Microsoft for Startups, NVIDIA Inception, Google for Startups: non-dilutive credits, GTM support, and marketplace access. Apply to all that fit; they're free." }
+      { n: "Corporate accelerator & partner programs", u: "", d: "AWS Activate, Microsoft for Startups, NVIDIA Inception, Google for Startups: non-dilutive credits, go-to-market support, and marketplace access. Apply to all that fit; they're free." }
     ]
   },
   {
@@ -215,9 +215,9 @@ const SOURCES = [
     repay: "equity",
     blurb: "Fixed-term programs that trade a standard check for a standard equity slice and compress years of learning and network into three months.",
     overview: [
-      "Accelerators run cohort-based programs (usually about 3 months) ending in a demo day in front of hundreds of investors. Y Combinator's standard deal is <strong>$500k</strong>: $125k for 7% on a post-money SAFE, plus $375k on an uncapped MFN SAFE. Techstars and 500 Global run similar structures.",
+      "Accelerators run cohort-based programs (usually about 3 months) ending in a demo day in front of hundreds of investors. Y Combinator's standard deal is <strong>$500k</strong>: $125k for 7% on a post-money SAFE, plus $375k on an uncapped MFN SAFE. Techstars (about $120k for 6%) and 500 Global (about $150k for 6%) run smaller versions of the same trade.",
       "What you're really buying: forced focus, weekly accountability, an alumni network that answers cold messages, and a demo day that compresses a six-month fundraise into two weeks.",
-      "<strong>The math:</strong> 7% is expensive if you already have traction and investor access. It's cheap if the brand, network, and fundraising leverage move your next round's valuation by more than 7%. For first-time founders without networks, top programs usually pay for themselves."
+      "<strong>The math:</strong> 7% is expensive if you already have traction and investor access. It's cheap if the brand, network, and fundraising leverage move your next round's valuation by more than 7%. For first-time founders without networks, top programs usually pay for themselves. Note the card's 7% is only the headline: the $375k MFN SAFE converts at your next round's terms and adds several more points of dilution."
     ],
     pitfalls: [
       { t: "The long tail is rough", d: "Outside the top ten programs, quality falls off fast. A no-name accelerator taking 6% for $50k and a coworking desk is usually a bad trade. Ask alumni for their honest ROI." },
@@ -231,7 +231,7 @@ const SOURCES = [
       { n: "Techstars deal terms", u: "https://www.techstars.com", d: "Compare terms across programs before committing; they are not all equal." }
     ],
     contacts: [
-      { n: "Y Combinator", u: "https://www.ycombinator.com/apply", d: "Applications open twice a year. The application itself is a great forcing function even if you don't get in." },
+      { n: "Y Combinator", u: "https://www.ycombinator.com/apply", d: "Applications open four times a year. The application itself is a great forcing function even if you don't get in." },
       { n: "Techstars", u: "https://www.techstars.com", d: "City- and corporate-themed programs worldwide." },
       { n: "500 Global", u: "https://500.co", d: "Global reach, strong in emerging markets." },
       { n: "University & city incubators", u: "", d: "Often equity-free: university programs, NSF I-Corps, and city economic-development incubators provide space, mentorship, and small grants." }
@@ -264,7 +264,7 @@ const SOURCES = [
     ],
     docs: [
       { n: "SEC Reg CF overview", u: "https://www.sec.gov/resources-small-businesses/exempt-offerings/regulation-crowdfunding", d: "The official rules: caps, disclosure, and investor limits." },
-      { n: "Crowd SAFE (Republic)", u: "https://republic.com", d: "The SAFE variant adapted for crowd investors." },
+      { n: "Crowd SAFE (Republic)", u: "https://republic.com", d: "The SAFE variant adapted for crowd investors; unlike a YC SAFE it often converts at a liquidity event rather than the next priced round." },
       { n: "Wefunder founder guide", u: "https://wefunder.com/faq", d: "Practical walkthrough of costs, timelines, and Form C mechanics." }
     ],
     contacts: [
@@ -287,13 +287,13 @@ const SOURCES = [
     repay: "none",
     blurb: "Government programs like SBIR and STTR award millions in non-dilutive funding for R&D. No equity, no repayment, just milestones and reports.",
     overview: [
-      "The U.S. government is the largest seed investor in America. <strong>SBIR/STTR</strong> ('America's Seed Fund') awards about $4B a year across 11 agencies: Phase I grants of $50k to $300k to prove feasibility, Phase II awards up to about $2M to build. No equity. No repayment.",
+      "The U.S. government is the largest seed investor in America. <strong>SBIR/STTR</strong> ('America's Seed Fund') awards about $4B a year (SBIR across 11 agencies; STTR, which requires partnering with a research institution, across 5): Phase I grants of $50k to $300k to prove feasibility, Phase II awards typically $750k to $1.8M, with supplements pushing some past $2M. No equity. No repayment.",
       "Beyond SBIR: NSF and NIH research grants, DoD programs (AFWERX, DIU), Department of Energy grants, state economic-development funds, and foundation grants for mission-driven companies. Pitch competitions and university programs add $5k to $100k checks with zero strings.",
       "<strong>Fit:</strong> deep tech, biotech, defense, climate, and hardware. Anything with real R&D risk. Software-only companies qualify less often, but state and private programs still apply."
     ],
     pitfalls: [
       { t: "Glacial timelines", d: "Application to award commonly runs 6 to 12 months. Grants are runway extension, not rescue funding. Apply a year before you need the money." },
-      { t: "Grant-writing is a skill", d: "Proposals are scored on specific criteria by reviewers with rubrics. First-timers should study funded proposals or hire a grant consultant (typical: a 5% to 10% success fee)." },
+      { t: "Grant-writing is a skill", d: "Proposals are scored on specific criteria by reviewers with rubrics. First-timers should study funded proposals or hire a grant consultant on fixed or hourly fees; be wary of success-fee arrangements, which can't be paid out of a federal award." },
       { t: "Scope handcuffs", d: "The money must fund the proposed work. If your product pivots, your grant may not pivot with it." },
       { t: "Reporting overhead", d: "Progress reports, audits, and compliance (especially DoD) consume real founder time. Budget for it." },
       { t: "The Phase II cliff", d: "Many companies become 'SBIR mills,' serially winning grants without ever finding customers. Grants should de-risk a business, not become one." }
@@ -324,7 +324,7 @@ const SOURCES = [
     blurb: "Banks, SBA-guaranteed loans, and venture debt lenders fund you without taking meaningful ownership. But the money must come back, win or lose.",
     overview: [
       "<strong>SBA loans</strong> (7(a) up to $5M, microloans up to $50k) are bank loans partially guaranteed by the government, unlocking credit for companies banks would otherwise decline. Rates are reasonable; paperwork is heavy; personal guarantees are standard.",
-      "<strong>Venture debt</strong> (Hercules, TriplePoint, and startup banks) lends to VC-backed startups: typically 20% to 35% of the last equity round, repaid over 3 to 4 years, plus small warrant coverage of roughly 0.5% to 2%. It extends runway between rounds without repricing your equity.",
+      "<strong>Venture debt</strong> (Hercules, TriplePoint, and startup banks) lends to VC-backed startups: typically 20% to 35% of the last equity round, repaid over 3 to 4 years, plus warrants typically sized at 5% to 20% of the loan amount, which usually costs well under 1% of the company. It extends runway between rounds without repricing your equity.",
       "<strong>The core trade:</strong> debt is the cheapest capital that exists when things go well and the most dangerous when they don't. It amplifies outcomes in both directions.",
       "<strong>Fit:</strong> companies with revenue or fresh equity backing, predictable cash needs (inventory, equipment, bridging to a milestone), and founders certain they can service payments through a bad quarter."
     ],
@@ -338,7 +338,7 @@ const SOURCES = [
     docs: [
       { n: "SBA loan programs", u: "https://www.sba.gov/funding-programs/loans", d: "Official guide to 7(a), 504, and microloan programs with lender matching." },
       { n: "SBA Lender Match", u: "https://www.sba.gov/funding-programs/loans/lender-match", d: "Free tool connecting you to participating lenders." },
-      { n: "Read the venture debt term sheet yourself", u: "", d: "Study interest rate, warrant coverage, covenants, and, most critically, the amortization start date. Every lender's paper differs; the four numbers that matter don't." }
+      { n: "Read the venture debt term sheet yourself", u: "", d: "Study interest rate, warrant coverage, covenants, and, most critically, the amortization start date: venture debt usually opens with 6 to 18 interest-only months, and when amortization begins decides whether the loan extends runway or claws it back before the next raise. Every lender's paper differs; the four numbers that matter don't." }
     ],
     contacts: [
       { n: "Community banks & CDFIs", u: "https://www.cdfifund.gov", d: "Community lenders often out-hustle big banks on small-business loans." },
@@ -376,7 +376,7 @@ const SOURCES = [
       { n: "FTC guidance on merchant cash advances", u: "https://www.ftc.gov", d: "Know the red flags before signing an MCA." }
     ],
     contacts: [
-      { n: "Pipe", u: "https://pipe.com", d: "Trades recurring revenue streams for upfront capital." },
+      { n: "Pipe", u: "https://pipe.com", d: "Embedded working-capital financing for small businesses; its original recurring-revenue marketplace is retired." },
       { n: "Capchase", u: "https://www.capchase.com", d: "Non-dilutive growth capital for SaaS." },
       { n: "Lighter Capital", u: "https://www.lightercapital.com", d: "The RBF pioneer. Up to $4M for tech companies." },
       { n: "Founderpath", u: "https://founderpath.com", d: "RBF for bootstrapped B2B SaaS founders." },
@@ -386,7 +386,7 @@ const SOURCES = [
 ];
 
 /* CVC pills for the spotlight section */
-const CVCS = ["GV (Alphabet)", "Salesforce Ventures", "M12 (Microsoft)", "Intel Capital", "Qualcomm Ventures", "Citi Ventures", "Samsung Ventures", "J&J Innovation (JJDC)", "Comcast Ventures", "AWS Activate*", "NVIDIA Inception*", "Microsoft for Startups*"];
+const CVCS = ["GV (Alphabet)", "Salesforce Ventures", "M12 (Microsoft)", "Intel Capital", "Qualcomm Ventures", "Citi Ventures", "Samsung Ventures", "J&J Innovation (JJDC)", "Cisco Investments", "AWS Activate*", "NVIDIA Inception*", "Microsoft for Startups*"];
 
 /* ============================================================
    Rendering

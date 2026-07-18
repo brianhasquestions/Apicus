@@ -19,9 +19,9 @@
     let verdict;
     if (s.visible) {
       verdict = "<strong>Patent and file before you ship.</strong> If competitors can reverse-engineer it from the product, trade secrecy dies on launch day. File a provisional before any public demo" +
-        (s.fast ? ", though weigh the 2&ndash;3 year grant timeline against how fast the technology ages" : "") + ".";
+        (s.fast ? ", though weigh the 2&ndash;3 year grant timeline against how fast the technology ages" : "") + "." + (s.secret ? " If only part of it ships, split by component: patent the visible piece and keep the server side secret." : "");
     } else if (s.secret) {
-      verdict = "<strong>Trade secret is likely the better trade.</strong> If the how stays server-side, secrecy is free, immediate, and indefinite, while a patent would publish your method to every competitor. Make the reasonable measures real: access controls, PIIAs, and NDAs" +
+      verdict = "<strong>Trade secret is likely the better trade.</strong> If the how stays server-side, secrecy is immediate, cheap, and indefinite for as long as the reasonable measures hold, whereas a patent would publish your method to every competitor. Make the reasonable measures real: access controls, PIIAs, and NDAs" +
         (s.moat ? ". For the investor-visible moat, document the secret's existence and protection regime for diligence; a well-guarded secret is a valuable asset too" : "") + ".";
     } else if (s.moat) {
       verdict = "<strong>Patent for the balance sheet.</strong> Deep tech, biotech, and hardware valuations lean on filings that investors and acquirers can see, cite, and value. Budget for real counsel; a vanity patent helps nobody.";

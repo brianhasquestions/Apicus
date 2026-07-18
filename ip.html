@@ -6,7 +6,7 @@
   <title>Apicus · Intellectual Property in the US</title>
   <meta name="description" content="Patents, trademarks, copyright, and trade secrets for US founders: what each protects, what it costs, the deadlines that kill rights, who actually owns the code, and what investors diligence.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 
@@ -59,7 +59,7 @@
           Four kinds of protection cover everything a startup makes and each follows different rules,
           different costs, and different deadlines. Two truths up front: <strong>your code is already
           copyrighted</strong> the moment you write it and <strong>a public demo starts a one-year clock</strong>
-          on US patent rights while killing most foreign ones instantly.
+          on US patent rights while instantly killing rights in Europe, China, and other absolute-novelty systems.
         </p>
         <div class="hero-cta reveal">
           <a class="btn btn-primary" href="#types">The four types
@@ -104,10 +104,10 @@
               <tr><th scope="col">Type</th><th scope="col">What it protects</th><th scope="col">How you get it</th><th scope="col">How long it lasts</th><th scope="col">Typical cost</th></tr>
             </thead>
             <tbody>
-              <tr><td>Utility patent</td><td>Inventions: how something works</td><td>Apply at the USPTO; examination takes 2&ndash;3+ years</td><td>20 years from filing</td><td>$8k &ndash; $20k+ with counsel; provisional filing fee itself is under $150 for small entities</td></tr>
+              <tr><td>Utility patent</td><td>Inventions: how something works</td><td>Apply at the USPTO; examination takes 2&ndash;3+ years</td><td>20 years from filing, kept alive by maintenance fees at years 3.5, 7.5, and 11.5</td><td>$8k &ndash; $20k+ with counsel; provisional filing fee itself is under $150 for small entities</td></tr>
               <tr><td>Design patent</td><td>Ornamental appearance of a product</td><td>Apply at the USPTO</td><td>15 years from grant</td><td>$2k &ndash; $5k with counsel</td></tr>
               <tr><td>Trademark</td><td>Names, logos, brands: source identity</td><td>Use in commerce creates common-law rights; register at the USPTO for real teeth</td><td>Indefinite, renewed while in use</td><td>~$350 per class filing, plus search and counsel</td></tr>
-              <tr><td>Copyright</td><td>Original expression: code, content, design assets</td><td><span class="tag-pill tag-none">automatic on creation</span> Register with the Copyright Office to sue and unlock statutory damages</td><td>Life + 70 years (95 for corporate works)</td><td>$45 &ndash; $65 to register</td></tr>
+              <tr><td>Copyright</td><td>Original expression: code, content, design assets</td><td><span class="tag-pill tag-none">automatic on creation</span> Register with the Copyright Office to sue and unlock statutory damages</td><td>Life + 70 years (95 from publication for corporate works)</td><td>$45 &ndash; $65 to register</td></tr>
               <tr><td>Trade secret</td><td>Anything valuable because it's secret: algorithms, processes, lists</td><td><span class="tag-pill tag-none">no registration</span> Protection exists only while you take reasonable measures to keep it secret</td><td>Indefinite, until it leaks</td><td>The cost of your access controls and NDAs</td></tr>
             </tbody>
           </table>
@@ -156,7 +156,7 @@
         </div>
         <div class="doc-extra">
           <h4>The sequence when it is time</h4>
-          <p>Knockout search first (free, five minutes, non-negotiable even if you never file). Then the wordmark before the logo mark: words carry the brand and logos get redesigned. Then one class you actually sell in, not six you might someday. Budget ~$350 per class before counsel.</p>
+          <p>Knockout search first (free, five minutes, non-negotiable even if you never file). Then the wordmark before the logo mark: words carry the brand and logos get redesigned. Then one class you actually sell in (trademarks register per class of goods and services), not six you might someday. Budget ~$350 per class before counsel. Pre-launch with no sales yet? An intent-to-use application reserves nationwide priority for the same fee plus a later statement of use.</p>
         </div>
       </div>
     </section>
@@ -174,9 +174,9 @@
           <h3>Getting the chain right</h3>
           <ul class="tick-list">
             <li><strong>Founders assign pre-incorporation IP</strong> to the company at formation. The prototype you built before the C-corp existed belongs to you personally until a signed assignment says otherwise.</li>
-            <li><strong>Every employee signs a PIIA</strong> on day one. Employee inventions within scope generally flow to the company, but the agreement is what removes the argument.</li>
+            <li><strong>Every employee signs a PIIA</strong> (proprietary information and invention assignment agreement) on day one. Employee inventions within scope generally flow to the company, but the agreement is what removes the argument.</li>
             <li><strong>Every contractor signs an IP assignment.</strong> The work-for-hire doctrine mostly does not cover contractor software: by default, the freelancer owns the code you paid for.</li>
-            <li><strong>Track open-source licenses.</strong> Permissive licenses (MIT, Apache) are fine; copyleft in shipped code (GPL family) gets flagged in every serious diligence. Know what's in the build.</li>
+            <li><strong>Track open-source licenses.</strong> Permissive licenses (MIT, Apache) are fine; copyleft in shipped code (the GPL family, which can require open-sourcing your own code; the AGPL triggers even for server-side use) gets flagged in every serious diligence. Know what's in the build.</li>
           </ul>
         </article>
         <article class="spot-card reveal">
@@ -220,6 +220,10 @@
           <p>Since the Supreme Court's <em>Alice</em> decision, abstract software ideas are hard to patent; specific technical implementations still can be. Most software startups win on execution and data, not patents. Spend accordingly.</p>
         </div>
         <div class="doc-extra">
+          <h4>Keeping foreign rights alive</h4>
+          <p>A PCT application (Patent Cooperation Treaty) filed within 12 months of your US priority date preserves rights in 150+ countries while you decide, with national filings due around month 30. It's how startups defer the expensive international question without losing it.</p>
+        </div>
+        <div class="doc-extra">
           <h4>Nobody will sign your NDA</h4>
           <p>Investors don't sign NDAs to hear pitches and ideas aren't protectable anyway; execution is. Pitch the what freely, keep the exact how in the deck's appendix you never send, and save the NDA for corporates and vendors.</p>
         </div>
@@ -237,11 +241,15 @@
       <div class="doc-extras reveal">
         <div class="doc-extra">
           <h4>Public disclosure: 12 months, or zero</h4>
-          <p>A demo day, a launch, a conference talk, a detailed blog post: each starts the one-year US clock to file a patent application. Most foreign systems have <strong>no grace period at all</strong>; the moment you disclose publicly, international rights are gone. File the provisional first.</p>
+          <p>A demo day, a launch, a conference talk, a detailed blog post: each starts the one-year US clock to file a patent application. Europe, China, and many other systems have <strong>no grace period at all</strong>; the moment you disclose publicly, those rights are gone (Canada, Japan, Korea, and Australia allow limited grace periods; don't rely on them). File the provisional first.</p>
         </div>
         <div class="doc-extra">
           <h4>First-to-file, not first-to-invent</h4>
-          <p>Since 2013, the US grants patents to whoever files first, not whoever invented first. Your lab notebook proves nothing at the patent office. If it matters, file.</p>
+          <p>Since 2013, the US grants patents to whoever files first, not whoever invented first. Your lab notebook won't win you priority at the patent office. If it matters, file.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Selling starts the clock too</h4>
+          <p>The one-year US clock also starts at the first sale or offer for sale, even a confidential one (the Supreme Court's Helsinn decision). A quiet pilot contract before filing counts. If revenue is near, file the provisional first.</p>
         </div>
         <div class="doc-extra">
           <h4>The provisional's own 12 months</h4>
@@ -253,11 +261,11 @@
         </div>
         <div class="doc-extra">
           <h4>Copyright: register before you need to sue</h4>
-          <p>Protection is automatic, but you must register before filing an infringement suit and timely registration (within 3 months of publication) unlocks statutory damages and fees. $65 now beats proving actual damages later.</p>
+          <p>Protection is automatic, but you must register before filing an infringement suit and timely registration (within 3 months of publication, or before the infringement begins) unlocks statutory damages ($750 to $150,000 per work, no proof of actual harm required) and attorney's fees. $65 now beats proving damages later.</p>
         </div>
         <div class="doc-extra">
           <h4>Trade secrets die on contact</h4>
-          <p>One unprotected disclosure, one departing employee without a PIIA, one pitch with the secret sauce on slide 4: the protection is gone permanently. Reasonable measures aren't optional; they're the entire legal test.</p>
+          <p>One truly public disclosure ends the secret permanently. A missing PIIA doesn't destroy it by itself, but it turns an easy misappropriation case into a hard one. Reasonable measures are the entire legal test under the federal DTSA and state acts; include the DTSA whistleblower notice in your NDAs and PIIAs or forfeit enhanced damages.</p>
         </div>
       </div>
     </section>
@@ -272,7 +280,7 @@
 
       <ol class="rules-list">
         <li class="reveal"><span class="rule-num">01</span><div><h3>Is the chain of title complete?</h3><p>Founder assignments, PIIAs from every employee past and present, and contractor assignments for every line of outside code. One missing signature from a departed co-founder can hold a round hostage.</p></div></li>
-        <li class="reveal"><span class="rule-num">02</span><div><h3>Is anyone going to sue you?</h3><p>Freedom to operate: does your product step on existing patents and did any founder carry material from a prior employer? Investors fear inherited lawsuits more than missing patents.</p></div></li>
+        <li class="reveal"><span class="rule-num">02</span><div><h3>Is anyone going to sue you?</h3><p>Freedom to operate: does your product step on someone else's patents? And separately, did any founder carry material from a prior employer? Investors fear inherited lawsuits more than missing patents.</p></div></li>
         <li class="reveal"><span class="rule-num">03</span><div><h3>What's actually in the codebase?</h3><p>An open-source license inventory. Copyleft in the shipped product triggers remediation work at exactly the wrong moment; know your dependencies before they do.</p></div></li>
         <li class="reveal"><span class="rule-num">04</span><div><h3>Does the moat match the pitch?</h3><p>If the deck says "proprietary technology," diligence asks what form: patents filed, trade secrets with real access controls, or nothing but adjectives. Deep tech valuations lean on the filings; software valuations lean on execution. Be the right one.</p></div></li>
         <li class="reveal"><span class="rule-num">05</span><div><h3>Is the brand yours?</h3><p>A trademark search and filing for the company name and product. Discovering a conflict during diligence reads as sloppiness; discovering it after the Series A press release costs real money.</p></div></li>
@@ -318,7 +326,7 @@
     <p class="footer-fine">Named for Marcus Gavius Apicius, whose <em>De re coquinaria</em> is the oldest surviving cookbook. Consider this a cookbook of capital: recipes, ingredients, and how each one can burn.</p>
   </footer>
 
-  <script src="site.js?v=8"></script>
-  <script src="ip.js?v=8"></script>
+  <script src="site.js?v=9"></script>
+  <script src="ip.js?v=9"></script>
 </body>
 </html>

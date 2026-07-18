@@ -30,15 +30,15 @@
     if (nf > nv + ni) {
       verdict = "<strong>Founders control the board outright.</strong> No coalition of investors and independents can outvote you. This is the position to protect for as long as the company's stage allows.";
     } else if (nv > nf + ni) {
-      verdict = "<strong>Investors control the board outright.</strong> The CEO serves at their pleasure, and every contested vote is already decided. If this is a term sheet, negotiate before you sign; if it's your current board, add an independent or a founder seat at the next round.";
+      verdict = "<strong>Investors control the board outright.</strong> The CEO serves at their pleasure and every contested vote is already decided. If this is a term sheet, negotiate before you sign; if it's your current board, add an independent or a founder seat at the next round.";
     } else if (nf === nv && ni > 0) {
-      verdict = "<strong>Split camps: the independent" + (ni > 1 ? "s" : "") + " decide" + (ni > 1 ? "" : "s") + " every contested vote,</strong> including whether the founder-CEO keeps the job. Insist the independent is chosen jointly, and choose someone whose judgment you'd accept on your worst day.";
+      verdict = "<strong>Split camps: the independent" + (ni > 1 ? "s" : "") + " decide" + (ni > 1 ? "" : "s") + " every contested vote,</strong> including whether the founder-CEO keeps the job. Insist the independent is chosen jointly and choose someone whose judgment you'd accept on your worst day.";
     } else {
-      verdict = "<strong>No single camp holds a majority.</strong> Contested votes come down to coalitions, and in practice that means the independents and the most persuasive person in the room. Keep the paper tight and the relationships tighter.";
+      verdict = "<strong>No single camp holds a majority.</strong> Contested votes come down to coalitions and in practice that means the independents and the most persuasive person in the room. Keep the paper tight and the relationships tighter.";
     }
 
     if (total % 2 === 0) {
-      verdict += " <strong>Note:</strong> an even number of seats (" + total + ") invites deadlock, and deadlock favors whoever benefits from nothing happening. Boards are built odd for a reason.";
+      verdict += " <strong>Note:</strong> an even number of seats (" + total + ") invites deadlock and deadlock favors whoever benefits from nothing happening. Boards are built odd for a reason.";
     }
 
     out.innerHTML = verdict;

@@ -67,15 +67,15 @@ const SOURCES = [
     blurb: "Fast, trust-based capital from people who bet on you, not your metrics. Also the easiest money to mishandle.",
     overview: [
       "Friends and family rounds fund more startups than all VCs combined. The money closes in days, terms are founder-friendly, and the diligence bar is 'we believe in you.'",
-      "That trust is exactly why you must treat it more formally, not less. Use a real instrument (a post-money SAFE with a sensible cap, or a promissory note) and put the risk in writing: this money may vanish, and it probably won't come back for 7 to 10 years if it comes back at all.",
-      "<strong>Golden rule:</strong> only take money someone can afford to lose completely, and never let anyone invest their emergency fund or retirement savings."
+      "That trust is exactly why you must treat it more formally, not less. Use a real instrument (a post-money SAFE with a sensible cap, or a promissory note) and put the risk in writing: this money may vanish and it probably won't come back for 7 to 10 years if it comes back at all.",
+      "<strong>Golden rule:</strong> only take money someone can afford to lose completely and never let anyone invest their emergency fund or retirement savings."
     ],
     pitfalls: [
       { t: "It's still a securities transaction", d: "U.S. securities laws apply to your aunt just like a VC. Most rounds rely on Reg D exemptions. Talk to a lawyer about accredited vs. non-accredited investors before wiring anything." },
       { t: "Handshake deals", d: "Undocumented 'investments' become bitter disputes at Thanksgiving, or during your Series A diligence. Paper everything with a SAFE or note." },
       { t: "Overvaluing the round", d: "A $20M cap on Uncle Joe's SAFE feels generous until real investors balk at it. Set caps a professional would recognize." },
       { t: "Cap table clutter", d: "Fifteen relatives with direct stakes complicate every future round. Keep the group small, or pool them into one entity." },
-      { t: "Relationship risk", d: "90% of startups fail. Decide upfront whether this relationship survives a total loss, and say that sentence out loud to them." }
+      { t: "Relationship risk", d: "90% of startups fail. Decide upfront whether this relationship survives a total loss and say that sentence out loud to them." }
     ],
     docs: [
       { n: "YC Post-money SAFE (Valuation Cap)", u: "https://www.ycombinator.com/documents", d: "The standard instrument: free, short, and battle-tested. Use it even for family." },
@@ -134,12 +134,12 @@ const SOURCES = [
     dilution: 20,
     speed: 1,
     repay: "equity",
-    blurb: "Professional funds investing other people's money for 10x+ returns. The most capital available anywhere, and the most expectations attached.",
+    blurb: "Professional funds investing other people's money for 10x+ returns. The most capital available anywhere and the most expectations attached.",
     overview: [
       "VCs raise funds from institutions (pensions, endowments, family offices) and must return multiples of that money in about 10 years. That math shapes everything: they need each investment to plausibly return the entire fund, so they exclusively back companies aiming for massive outcomes.",
       "Seed rounds today are typically $1M to $4M on SAFEs; Series A ($8M to $20M) and beyond are priced equity rounds with board seats, protective provisions, and NVCA-style documents.",
       "<strong>Take VC only if</strong> your market is genuinely huge, speed is a competitive weapon, and you're comfortable committing to a sell-or-IPO endgame. VC is a one-way door: once institutional money is in, a comfortable $5M-a-year lifestyle business is no longer an acceptable outcome to your board.",
-      "<strong>How big is huge?</strong> It depends entirely on who you pitch: a fund's size sets the exit it needs, and the exit sets the market. <a href=\"#market\">The market math section</a> maps the ranges by investor type, from micro-VCs to national security funds."
+      "<strong>How big is huge?</strong> It depends entirely on who you pitch: a fund's size sets the exit it needs and the exit sets the market. <a href=\"#market\">The market math section</a> maps the ranges by investor type, from micro-VCs to national security funds."
     ],
     pitfalls: [
       { t: "Liquidation preference stacks", d: "Anything beyond a 1x non-participating preference means investors get paid multiples before you see a dollar. In a modest exit, founders with 30% ownership can walk away with nothing." },
@@ -173,7 +173,7 @@ const SOURCES = [
     dilution: 12,
     speed: 1,
     repay: "equity or none",
-    blurb: "Corporate venture arms and partnership programs invest for strategic value, not just returns, and bring distribution, pilots, and credibility no VC can.",
+    blurb: "Corporate venture arms and partnership programs invest for strategic value, not just returns. They bring distribution, pilots, and credibility no VC can.",
     overview: [
       "Large corporations deploy tens of billions per year into startups through two channels. <strong>Corporate venture capital (CVC)</strong>, arms like GV, Salesforce Ventures, M12, Intel Capital, and Qualcomm Ventures, writes equity checks like a VC but with a strategic mandate. <strong>Partnership programs</strong> (accelerators, ISV and marketplace programs, co-development deals) often deliver cash, cloud credits, and revenue with <em>zero equity taken</em>.",
       "The real prize is rarely the check. A CVC investment frequently arrives bundled with a paid pilot, a co-selling agreement, or marketplace distribution: assets that would take years to earn cold. 'Backed by [corporate]' also collapses enterprise-sales trust barriers overnight.",
@@ -213,7 +213,7 @@ const SOURCES = [
     dilution: 7,
     speed: 2,
     repay: "equity",
-    blurb: "Fixed-term programs that trade a standard check for a standard equity slice, and compress years of learning and network into three months.",
+    blurb: "Fixed-term programs that trade a standard check for a standard equity slice and compress years of learning and network into three months.",
     overview: [
       "Accelerators run cohort-based programs (usually about 3 months) ending in a demo day in front of hundreds of investors. Y Combinator's standard deal is <strong>$500k</strong>: $125k for 7% on a post-money SAFE, plus $375k on an uncapped MFN SAFE. Techstars and 500 Global run similar structures.",
       "What you're really buying: forced focus, weekly accountability, an alumni network that answers cold messages, and a demo day that compresses a six-month fundraise into two weeks.",
@@ -250,7 +250,7 @@ const SOURCES = [
     repay: "equity or product",
     blurb: "Two very different games: rewards campaigns pre-sell your product (0% equity), while Reg CF equity campaigns sell shares to the crowd, up to $5M per year.",
     overview: [
-      "<strong>Rewards crowdfunding</strong> (Kickstarter, Indiegogo) is pre-selling: backers pay today for a product you'll ship later. It's non-dilutive market validation, and a great fit for consumer hardware and physical products.",
+      "<strong>Rewards crowdfunding</strong> (Kickstarter, Indiegogo) is pre-selling: backers pay today for a product you'll ship later. It's non-dilutive market validation and a great fit for consumer hardware and physical products.",
       "<strong>Equity crowdfunding</strong> (Regulation CF: Wefunder, StartEngine, Republic) lets anyone, not just accredited investors, buy into your company, up to <strong>$5M per 12 months</strong>. Modern platforms pool investors into a single SPV or use a Crowd SAFE, so hundreds of backers appear as one line on your cap table.",
       "The hidden superpower: a successful campaign converts customers into evangelists with a financial stake in telling everyone about you.",
       "<strong>Fit:</strong> consumer products with communities, mission-driven brands, and companies whose users badly want them to exist."
@@ -325,7 +325,7 @@ const SOURCES = [
     overview: [
       "<strong>SBA loans</strong> (7(a) up to $5M, microloans up to $50k) are bank loans partially guaranteed by the government, unlocking credit for companies banks would otherwise decline. Rates are reasonable; paperwork is heavy; personal guarantees are standard.",
       "<strong>Venture debt</strong> (Hercules, TriplePoint, and startup banks) lends to VC-backed startups: typically 20% to 35% of the last equity round, repaid over 3 to 4 years, plus small warrant coverage of roughly 0.5% to 2%. It extends runway between rounds without repricing your equity.",
-      "<strong>The core trade:</strong> debt is the cheapest capital that exists when things go well, and the most dangerous when they don't. It amplifies outcomes in both directions.",
+      "<strong>The core trade:</strong> debt is the cheapest capital that exists when things go well and the most dangerous when they don't. It amplifies outcomes in both directions.",
       "<strong>Fit:</strong> companies with revenue or fresh equity backing, predictable cash needs (inventory, equipment, bridging to a milestone), and founders certain they can service payments through a bad quarter."
     ],
     pitfalls: [
@@ -333,7 +333,7 @@ const SOURCES = [
       { t: "Covenants with teeth", d: "Minimum cash balances, revenue floors, and MAC (material adverse change) clauses can put you in default while you still have money in the bank. Negotiate covenant-lite where possible." },
       { t: "Debt plus down round equals death spiral", d: "Venture debt due right when equity markets close is how well-known startups die suddenly. Never let debt maturity land before a realistic next raise." },
       { t: "Warrants add up", d: "Individually small, but warrant coverage across multiple facilities quietly dilutes. Track them on your cap table like any other equity." },
-      { t: "It must be repaid", d: "Obvious, and yet: equity forgives failure, debt doesn't. If your revenue is speculative, debt is the wrong instrument." }
+      { t: "It must be repaid", d: "Obvious, yet forgotten: equity forgives failure, debt doesn't. If your revenue is speculative, debt is the wrong instrument." }
     ],
     docs: [
       { n: "SBA loan programs", u: "https://www.sba.gov/funding-programs/loans", d: "Official guide to 7(a), 504, and microloan programs with lender matching." },
@@ -365,7 +365,7 @@ const SOURCES = [
       "<strong>Fit:</strong> SaaS and subscription businesses with predictable MRR, e-commerce with steady sales, and any company bridging a short, well-defined gap. It's speed and zero dilution in exchange for margin."
     ],
     pitfalls: [
-      { t: "The fee is not the APR", d: "A '10% fee' repaid in eight months is roughly a 15% to 30% effective annual rate, and much worse the faster you repay. Always compute the effective APR before comparing options." },
+      { t: "The fee is not the APR", d: "A '10% fee' repaid in eight months is roughly a 15% to 30% effective annual rate and much worse the faster you repay. Always compute the effective APR before comparing options." },
       { t: "Revenue share squeezes runway", d: "Handing over 10% of top-line revenue every month cuts the very cash flow you raised to protect. Model it into your burn." },
       { t: "Stacking advances", d: "Taking a second advance to cover the first is the small-business death spiral. If you're stacking, the problem is the business model, not the financing." },
       { t: "Growth-punishing structures", d: "Fixed-fee structures mean growing faster raises your effective APR (you repay the same fee, sooner). Look for caps and prepayment fairness." },

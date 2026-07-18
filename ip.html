@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apicus · Intellectual Property in the US</title>
+  <meta name="description" content="Patents, trademarks, copyright, and trade secrets for US founders: what each protects, what it costs, the deadlines that kill rights, who actually owns the code, and what investors diligence.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9"/><path d="M12 9c0-4 3-6 7-6 0 4-3 6-7 6Z"/><path d="M12 13c0-3-2.5-5-5.5-5 0 3 2.5 5 5.5 5Z"/></svg>
+        </span>
+        <span>apicus<em>.org</em></span>
+      </a>
+      <nav class="nav-pages" aria-label="Pages">
+        <a class="page-link" href="index.html">Funding Guide</a>
+        <a class="page-link" href="compliance.html">Compliance</a>
+        <a class="page-link" href="board.html">Advisors &amp; Board</a>
+        <a class="page-link" href="scale.html">Scale-Ready</a>
+        <a class="page-link" href="documents.html">Documents</a>
+        <a class="page-link" href="ip.html" aria-current="page">IP</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <div class="nav-sections-row">
+      <nav class="nav-links" aria-label="Sections on this page">
+        <a href="#types">The Four Types</a>
+        <a href="#ownership">Chain of Title</a>
+        <a href="#strategy">Patent or Secret</a>
+        <a href="#deadlines">The Clocks</a>
+        <a href="#diligence">What Investors Check</a>
+        <a href="#pitfalls">Pitfalls</a>
+      </nav>
+    </div>
+    <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero hero-compact" id="hero">
+      <div class="hero-inner">
+        <p class="hero-kicker reveal">Apicus · chapter no. 06</p>
+        <h1 class="hero-title">
+          <span class="line"><span>Own what you <em class="accent-grad">build</em>.</span></span>
+          <span class="line hero-sub-line"><span>IP law runs on clocks, and some of them are already ticking.</span></span>
+        </h1>
+        <p class="hero-sub reveal">
+          Four kinds of protection cover everything a startup makes, and each follows different rules,
+          different costs, and different deadlines. Two truths up front: <strong>your code is already
+          copyrighted</strong> the moment you write it, and <strong>a public demo starts a one-year clock</strong>
+          on US patent rights while killing most foreign ones instantly.
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#types">The four types
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#strategy">Patent or trade secret?</a>
+        </div>
+
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-num" data-count="4">0</span>
+            <span class="stat-label">kinds of IP protection in the US</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="12" data-suffix=" mo">0</span>
+            <span class="stat-label">US grace period after public disclosure</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="0" data-suffix=" days">0</span>
+            <span class="stat-label">foreign grace period: file before you demo</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="20" data-suffix=" yr">0</span>
+            <span class="stat-label">utility patent term from filing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TYPES ================= -->
+    <section class="section" id="types">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 01 · The map</p>
+        <h2>The four types of protection</h2>
+        <p class="section-sub">Everything a startup produces falls under one or more of these. Costs are current filing-fee ranges plus typical attorney work; startups usually qualify for the USPTO's small or micro entity discounts.</p>
+      </div>
+
+      <div class="matrix-panel reveal">
+        <div class="matrix-scroll">
+          <table class="matrix">
+            <thead>
+              <tr><th scope="col">Type</th><th scope="col">What it protects</th><th scope="col">How you get it</th><th scope="col">How long it lasts</th><th scope="col">Typical cost</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Utility patent</td><td>Inventions: how something works</td><td>Apply at the USPTO; examination takes 2&ndash;3+ years</td><td>20 years from filing</td><td>$8k &ndash; $20k+ with counsel; provisional filing fee itself is under $150 for small entities</td></tr>
+              <tr><td>Design patent</td><td>Ornamental appearance of a product</td><td>Apply at the USPTO</td><td>15 years from grant</td><td>$2k &ndash; $5k with counsel</td></tr>
+              <tr><td>Trademark</td><td>Names, logos, brands: source identity</td><td>Use in commerce creates common-law rights; register at the USPTO for real teeth</td><td>Indefinite, renewed while in use</td><td>~$350 per class filing, plus search and counsel</td></tr>
+              <tr><td>Copyright</td><td>Original expression: code, content, design assets</td><td><span class="tag-pill tag-none">automatic on creation</span> Register with the Copyright Office to sue and unlock statutory damages</td><td>Life + 70 years (95 for corporate works)</td><td>$45 &ndash; $65 to register</td></tr>
+              <tr><td>Trade secret</td><td>Anything valuable because it's secret: algorithms, processes, lists</td><td><span class="tag-pill tag-none">no registration</span> Protection exists only while you take reasonable measures to keep it secret</td><td>Indefinite, until it leaks</td><td>The cost of your access controls and NDAs</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="chart-foot">Official sources and filing portals: <a href="https://www.uspto.gov" target="_blank" rel="noopener">uspto.gov</a> for patents and trademarks, <a href="https://www.copyright.gov" target="_blank" rel="noopener">copyright.gov</a> for registration. The USPTO also runs a <a href="https://www.uspto.gov/patents/basics/using-legal-services/pro-bono/patent-pro-bono-program" target="_blank" rel="noopener">patent pro bono program</a> and law-school clinics for founders who can't yet afford counsel.</p>
+      </div>
+    </section>
+
+    <!-- ================= OWNERSHIP ================= -->
+    <section class="section" id="ownership">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 02 · Chain of title</p>
+        <h2>Who actually owns the code</h2>
+        <p class="section-sub">The most common startup IP disaster isn't infringement; it's discovering during diligence that the company never owned its own product. Ownership doesn't follow payment or intention. It follows paper.</p>
+      </div>
+
+      <div class="spotlight-grid">
+        <article class="spot-card reveal">
+          <h3>Getting the chain right</h3>
+          <ul class="tick-list">
+            <li><strong>Founders assign pre-incorporation IP</strong> to the company at formation. The prototype you built before the C-corp existed belongs to you personally until a signed assignment says otherwise.</li>
+            <li><strong>Every employee signs a PIIA</strong> on day one. Employee inventions within scope generally flow to the company, but the agreement is what removes the argument.</li>
+            <li><strong>Every contractor signs an IP assignment.</strong> The work-for-hire doctrine mostly does not cover contractor software: by default, the freelancer owns the code you paid for.</li>
+            <li><strong>Track open-source licenses.</strong> Permissive licenses (MIT, Apache) are fine; copyleft in shipped code (GPL family) gets flagged in every serious diligence. Know what's in the build.</li>
+          </ul>
+        </article>
+        <article class="spot-card reveal">
+          <h3>The prior-employer trap</h3>
+          <ul class="cross-list">
+            <li><strong>Your day job may own your side project.</strong> Invention assignment clauses in employment agreements can reach moonlighting work, especially if it's related to the employer's business.</li>
+            <li><strong>Never use employer equipment or time.</strong> Building the startup on the company laptop is how employers win those disputes.</li>
+            <li><strong>Read your old agreements before incorporating.</strong> Some states limit how far employer clauses reach (California's Labor Code &sect;2870 protects genuinely unrelated side work), but the safe path is a clean break and your own hardware.</li>
+            <li><strong>Don't import your old employer's material.</strong> Code, docs, or customer lists from a previous job are trade-secret litigation waiting for your first press coverage.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= STRATEGY ================= -->
+    <section class="section" id="strategy">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 03 · The strategic call</p>
+        <h2>Patent or trade secret?</h2>
+        <p class="section-sub">A patent is a public disclosure in exchange for a 20-year monopoly. A trade secret is silence that lasts as long as the silence does. You can't have both for the same invention, and the right answer depends on what ships.</p>
+      </div>
+
+      <div class="check-panel reveal">
+        <h3 class="chart-title">Check what's true of your core technology</h3>
+        <div class="check-grid" id="ipGrid" style="grid-template-columns: 1fr">
+          <label class="check-item"><input type="checkbox" data-q="visible"><span>Competitors could reverse-engineer it from the shipped product</span></label>
+          <label class="check-item"><input type="checkbox" data-q="moat"><span>We need an asset investors and acquirers can see and value (deep tech, biotech, hardware)</span></label>
+          <label class="check-item"><input type="checkbox" data-q="secret"><span>The important part runs server-side or internally, where nobody outside can inspect it</span></label>
+          <label class="check-item"><input type="checkbox" data-q="fast"><span>The technology will likely be obsolete within a few years</span></label>
+        </div>
+        <p class="balance-verdict" id="ipVerdict" style="margin-top:16px"></p>
+      </div>
+
+      <div class="doc-extras reveal" style="margin-top:22px">
+        <div class="doc-extra">
+          <h4>The provisional application</h4>
+          <p>A cheap placeholder filed at the USPTO that locks your priority date and lets you say "patent pending" for 12 months while you decide whether the full application is worth it. File it before any demo, launch, or pitch deck that explains the how.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Software patent reality</h4>
+          <p>Since the Supreme Court's <em>Alice</em> decision, abstract software ideas are hard to patent; specific technical implementations still can be. Most software startups win on execution and data, not patents. Spend accordingly.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Nobody will sign your NDA</h4>
+          <p>Investors don't sign NDAs to hear pitches, and ideas aren't protectable anyway; execution is. Pitch the what freely, keep the exact how in the deck's appendix you never send, and save the NDA for corporates and vendors.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DEADLINES ================= -->
+    <section class="section" id="deadlines">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 04 · The clocks</p>
+        <h2>Deadlines that kill rights</h2>
+        <p class="section-sub">US IP law is first-to-file and full of one-way doors. These are the clocks founders discover too late.</p>
+      </div>
+
+      <div class="doc-extras reveal">
+        <div class="doc-extra">
+          <h4>Public disclosure: 12 months, or zero</h4>
+          <p>A demo day, a launch, a conference talk, a detailed blog post: each starts the one-year US clock to file a patent application. Most foreign systems have <strong>no grace period at all</strong>; the moment you disclose publicly, international rights are gone. File the provisional first.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>First-to-file, not first-to-invent</h4>
+          <p>Since 2013, the US grants patents to whoever files first, not whoever invented first. Your lab notebook proves nothing at the patent office. If it matters, file.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>The provisional's own 12 months</h4>
+          <p>A provisional application expires in exactly one year. Miss the non-provisional deadline and your priority date evaporates, along with anything disclosed since. Calendar it the day you file.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Trademarks reward the early</h4>
+          <p>Common-law rights start with use, but registration sets nationwide priority. File before the brand is worth fighting over, and search the <a href="https://www.uspto.gov/trademarks/search" target="_blank" rel="noopener">USPTO trademark database</a> before you print the t-shirts. A forced rebrand after traction is a six-figure tax on skipping a $350 filing.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Copyright: register before you need to sue</h4>
+          <p>Protection is automatic, but you must register before filing an infringement suit, and timely registration (within 3 months of publication) unlocks statutory damages and fees. $65 now beats proving actual damages later.</p>
+        </div>
+        <div class="doc-extra">
+          <h4>Trade secrets die on contact</h4>
+          <p>One unprotected disclosure, one departing employee without a PIIA, one pitch with the secret sauce on slide 4, and the protection is gone permanently. Reasonable measures aren't optional; they're the entire legal test.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DILIGENCE ================= -->
+    <section class="section" id="diligence">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 05 · The funding tie-in</p>
+        <h2>What investors actually check</h2>
+        <p class="section-sub">IP diligence is quiet until it isn't. These are the questions every serious term sheet's diligence list asks, and each maps to something on this page you can fix now for almost nothing.</p>
+      </div>
+
+      <ol class="rules-list">
+        <li class="reveal"><span class="rule-num">01</span><div><h3>Is the chain of title complete?</h3><p>Founder assignments, PIIAs from every employee past and present, and contractor assignments for every line of outside code. One missing signature from a departed co-founder can hold a round hostage.</p></div></li>
+        <li class="reveal"><span class="rule-num">02</span><div><h3>Is anyone going to sue you?</h3><p>Freedom to operate: does your product step on existing patents, and did any founder carry material from a prior employer? Investors fear inherited lawsuits more than missing patents.</p></div></li>
+        <li class="reveal"><span class="rule-num">03</span><div><h3>What's actually in the codebase?</h3><p>An open-source license inventory. Copyleft in the shipped product triggers remediation work at exactly the wrong moment; know your dependencies before they do.</p></div></li>
+        <li class="reveal"><span class="rule-num">04</span><div><h3>Does the moat match the pitch?</h3><p>If the deck says "proprietary technology," diligence asks what form: patents filed, trade secrets with real access controls, or nothing but adjectives. Deep tech valuations lean on the filings; software valuations lean on execution. Be the right one.</p></div></li>
+        <li class="reveal"><span class="rule-num">05</span><div><h3>Is the brand yours?</h3><p>A trademark search and filing for the company name and product. Discovering a conflict during diligence reads as sloppiness; discovering it after the Series A press release costs real money.</p></div></li>
+      </ol>
+    </section>
+
+    <!-- ================= PITFALLS ================= -->
+    <section class="section" id="pitfalls">
+      <div class="section-head reveal">
+        <p class="eyebrow">No. 06 · How it goes wrong</p>
+        <h2>The IP pitfalls</h2>
+      </div>
+      <ol class="rules-list">
+        <li class="reveal"><span class="rule-num">01</span><div><h3>Demoing before filing.</h3><p>The launch video that made the round possible also started the US patent clock and ended foreign rights. A provisional filed the week before costs a few hundred dollars.</p></div></li>
+        <li class="reveal"><span class="rule-num">02</span><div><h3>Paying a contractor and assuming ownership.</h3><p>Payment buys you a license to nothing in particular. Without a signed assignment, the contractor owns the code, and their leverage grows with your valuation.</p></div></li>
+        <li class="reveal"><span class="rule-num">03</span><div><h3>Naming the company without searching.</h3><p>Five minutes in the USPTO database before you commit, or a cease-and-desist after you've built the brand. This trade has no upside on the skip side.</p></div></li>
+        <li class="reveal"><span class="rule-num">04</span><div><h3>Patenting for vanity.</h3><p>A junk patent drafted from a template impresses no examiner, no investor, and no court. If the invention doesn't justify real counsel, it usually justifies trade secrecy instead.</p></div></li>
+        <li class="reveal"><span class="rule-num">05</span><div><h3>Treating IP as a launch-week problem.</h3><p>Assignments are cheapest at formation, provisionals are cheapest before disclosure, trademarks are cheapest before traction. Every one of these gets more expensive with success, which is exactly when you'll finally think about them.</p></div></li>
+      </ol>
+
+      <a class="chapter-link reveal" href="documents.html">
+        <div>
+          <span class="cl-kicker">Previous chapter · No. 05</span>
+          <h3>The document library</h3>
+          <p class="section-sub">The PIIAs, assignments, and agreements where chain of title actually gets papered.</p>
+        </div>
+        <span class="cl-arrow" aria-hidden="true">→</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Apicus</strong> is an educational field guide, not legal or financial advice. Consult a startup attorney before signing any financing document.</p>
+    <p class="footer-fine">Named for Marcus Gavius Apicius, whose <em>De re coquinaria</em> is the oldest surviving cookbook. Consider this a cookbook of capital: recipes, ingredients, and how each one can burn.</p>
+  </footer>
+
+  <script src="site.js?v=7"></script>
+  <script src="ip.js?v=7"></script>
+</body>
+</html>
